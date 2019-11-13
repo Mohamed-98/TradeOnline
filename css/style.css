@@ -1,0 +1,162 @@
+body {
+  background-image: url(../img/bgO.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+nav {
+  background: rgba(0, 0, 0, 0);
+  box-shadow: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav li a {
+  position: relative;
+  color: rgba(51, 51, 51, 0.87);
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  overflow: hidden;
+}
+nav li a:hover {
+  background: rgba(255, 255, 255, 0);
+
+  color: #6344a4;
+}
+.active {
+  position: relative;
+  color: #6344a4;
+  outline: none;
+
+  letter-spacing: 2px;
+}
+/*font section*/
+
+.active:active {
+  outline: none;
+}
+.active:before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  background-color: #6344a4;
+  left: 9%;
+  bottom: 25%;
+}
+
+nav li a:before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  background-color: #6344a4;
+  left: -100px;
+  bottom: 25%;
+  transition: 0.5s;
+}
+nav li a:hover:before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  background-color: #6344a4;
+  left: 10%;
+  bottom: 25%;
+  transition: 0.5s;
+}
+
+.brand-logo {
+  margin-left: 30px;
+  margin-top: 0px;
+}
+.right {
+  margin-right: 50px;
+}
+.right li a {
+  margin-right: 50px;
+}
+
+/*conent*/
+.content {
+  width: 50%;
+  margin: 50px 0 0 40px;
+}
+.head-content {
+  font-size: 60px;
+  font-weight: 1000;
+  color: #333;
+  margin-top: 0px;
+  line-height: 4rem;
+}
+.slogan {
+  font-size: 50px;
+  color: rgba(51, 51, 51, 0.829);
+  line-height: 0.1rem;
+  font-family: sans-serif;
+
+  margin: -20px 0 30px 0;
+}
+.lorem {
+  text-align: left;
+  color: rgba(51, 51, 51, 0.829);
+}
+.user-area {
+  display: flex;
+  margin: 50px 0 0 0px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  color: rgba(51, 51, 51, 0.829);
+}
+.user-area:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  height: 100%;
+  width: 2px;
+  background-color: #6344a4;
+}
+.user-area button {
+  margin: 0 auto;
+  background-color: #6344a4;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 30px;
+  text-shadow: 0 0px 2px rgb(0, 0, 0);
+
+  transition: 0.5s;
+}
+.user-area button:hover {
+  background-color: #6244a4de;
+
+  transition: 0.5s;
+}
+
+.user-area a {
+  color: #f4f4f4;
+  font-weight: 600;
+  font-size: 16px;
+}
+.leftside {
+  /* border: 2px solid #6344a4;*/
+  width: 50%;
+  margin-right: 30px;
+}
+.rightside {
+  width: 50%;
+  margin-left: 30px;
+
+  /* border:2px solid #6344a4; */
+}
+.footer {
+  margin: 100px 0 0 50px;
+}
+button {
+  cursor: pointer;
+}
+.icons i {
+  margin: 4px;
+  font-size: 20px;
+  color: #333;
+}
