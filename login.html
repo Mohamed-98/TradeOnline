@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link
+      href="//db.onlinewebfonts.com/c/066ce24dae3730ed6c648b09efaea93a?family=Acumin+Variable+Concept"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <title>TO | LOGIN</title>
+    <link rel="icon" href="img/logorefined.png" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="container">
+        <div class="form-area">
+          <!-- pic -->
+          <div class="brand-logo">
+            <img
+              onclick=" logoRedirect()"
+              src="img/NEWLOGO2.png"
+              alt=""
+              width="200px"
+              height="70px"
+            />
+          </div>
+
+          <!-- pic -->
+
+          <div class="form-text">
+            Welcome,
+          </div>
+          <p
+            style="font-family:Arial, Helvetica, sans-serif; margin-top: -20px;"
+          >
+            Enter your credentials to log in
+          </p>
+          <br />
+
+          <!-- INPUTS-AREA -->
+          <div class="form-inputs">
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="Email or Phone"
+            /><br />
+            <input type="password" name="" id="" placeholder="Password" /><br />
+            <button>
+              <a onclick="loadingShow()" href="#" class="form-input-a"
+                >Log In</a
+              >
+            </button>
+            <!-- <div class="loader" id="loading-icon"></div> -->
+            <p class="forget-pass"><a href="#"> Forgot your password? </a></p>
+          </div>
+
+          <!-- INPUTS-AREA -->
+
+          <!-- BOTTOM-SIDE -->
+
+          <div class="new-acc">
+            <a href=""><h3>Creat a New Account</h3></a>
+          </div>
+        </div>
+      </div>
+      <div class="container bottom-section">
+        <div class="bottom-text">
+          <p>Get The App.</p>
+        </div>
+        <div class="platforms">
+          <img src="img/apps.png" width="400px" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- BOTTOM-SIDE -->
+
+    <script>
+      function logoRedirect() {
+        window.location.href = "index.html";
+      }
+
+      // function loadingShow() {
+      //   document.getElementById("loading-icon").style.opacity = "1";
+      // }
+    </script>
+  </body>
+</html>
