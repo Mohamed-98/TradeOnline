@@ -17,7 +17,13 @@
           <!-- pic -->
           <div id="hide">
             <div class="brand-logo">
-              <img src="img/NEWLOGO2.png" alt="" width="200px" height="70px" />
+              <img
+                onclick="backToHome()"
+                src="img/logorefined.png"
+                alt=""
+                width="110px"
+                height="110px"
+              />
             </div>
 
             <!-- pic -->
@@ -64,7 +70,13 @@
 
           <div id="show">
             <div class="brand-logo">
-              <img src="img/NEWLOGO2.png" alt="" width="200px" height="70px" />
+              <img
+                onclick="backToHome()"
+                src="img/logorefined.png"
+                alt=""
+                width="110px"
+                height="110px"
+              />
             </div>
 
             <!-- pic -->
@@ -140,6 +152,9 @@
       function hideForm() {
         document.getElementById("show").style.display = "none";
         document.getElementById("hide").style.display = "block";
+      }
+      function backToHome() {
+        window.location.href = "index.html";
       }
     </script>
   </body>
