@@ -4,16 +4,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
     />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-
-    <link
-      href="//db.onlinewebfonts.com/c/066ce24dae3730ed6c648b09efaea93a?family=Acumin+Variable+Concept"
-      rel="stylesheet"
-      type="text/css"
-    />
 
     <link rel="stylesheet" type="text/css" href="css/login.css" />
     <title>TO | LOGIN</title>
@@ -23,54 +13,112 @@
     <div class="content">
       <div class="container">
         <div class="form-area">
+          <!-- LOGIN-FORM-STARTS -->
           <!-- pic -->
-          <div class="brand-logo">
-            <img
-              onclick=" logoRedirect()"
-              src="img/NEWLOGO2.png"
-              alt=""
-              width="200px"
-              height="70px"
-            />
-          </div>
+          <div id="hide">
+            <div class="brand-logo">
+              <img src="img/NEWLOGO2.png" alt="" width="200px" height="70px" />
+            </div>
 
-          <!-- pic -->
+            <!-- pic -->
 
-          <div class="form-text">
-            Welcome,
-          </div>
-          <p
-            style="font-family:Arial, Helvetica, sans-serif; margin-top: -20px;"
-          >
-            Enter your credentials to log in
-          </p>
-          <br />
+            <div class="form-text">
+              Welcome,
+            </div>
+            <p
+              style="font-family:Arial, Helvetica, sans-serif; margin-top: -20px;"
+            >
+              Enter your credentials to log in
+            </p>
+            <br />
 
-          <!-- INPUTS-AREA -->
-          <div class="form-inputs">
-            <input
-              type="email"
-              name=""
-              id=""
-              placeholder="Email or Phone"
-            /><br />
-            <input type="password" name="" id="" placeholder="Password" /><br />
-            <button>
-              <a onclick="loadingShow()" href="#" class="form-input-a"
-                >Log In</a
-              >
-            </button>
+            <!-- INPUTS-AREA -->
+            <div class="form-inputs">
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="Email or Phone"
+              /><br />
+              <input
+                type="password"
+                name=""
+                id=""
+                placeholder="Password"
+              /><br />
+              <button>
+                <a href="#" class="form-input-a">Log In</a>
+              </button>
+            </div>
             <!-- <div class="loader" id="loading-icon"></div> -->
             <p class="forget-pass"><a href="#"> Forgot your password? </a></p>
+
+            <h3 class="new-acc" onclick="showForm()">
+              Creat a New Account
+            </h3>
           </div>
 
-          <!-- INPUTS-AREA -->
+          <!-- LOGIN-FORM-ENDS -->
+          <!-- -------------------------------------------------------------------------------------------------------------------------------- -->
+          <!-- SIGNUP-FORM-STARTS -->
 
+          <div id="show">
+            <div class="brand-logo">
+              <img src="img/NEWLOGO2.png" alt="" width="200px" height="70px" />
+            </div>
+
+            <!-- pic -->
+
+            <div class="form-text">
+              Sign Up
+            </div>
+            <p
+              style="font-family:Arial, Helvetica, sans-serif; margin-top: -20px;"
+            >
+              Please, fill out this form!
+            </p>
+            <br />
+
+            <!-- INPUTS-AREA -->
+            <div class="form-inputs">
+              <input type="text" name="" id="" placeholder="Your Name" /><br />
+              <input type="email" name="" id="" placeholder="Email" /><br />
+
+              <input
+                type="password"
+                name=""
+                id=""
+                placeholder="Password"
+              /><br /><br />
+              <p
+                style="font-size: 13px; margin-left: -60px  ; font-family:Arial, Helvetica, sans-serif; margin-top: -20px;"
+              >
+                <i class="fas fa-exclamation"></i> Passwords must be at least 6
+                characters.
+              </p>
+              <input
+                type="password"
+                name=""
+                id=""
+                placeholder="Re-Enter Password"
+              /><br />
+              <button>
+                <a href="#" class="form-input-a">Creat Account</a>
+              </button>
+
+              <!-- <div class="loader" id="loading-icon"></div> -->
+              <p class="forget-pass">
+                <a href="#" onclick="hideForm()">
+                  Already have an account? Sign-In
+                  <i class="fas fa-caret-right"></i>
+                </a>
+              </p>
+            </div>
+
+            <!-- INPUTS-AREA -->
+            <!-- SIGNUP-FORM-ENDS -->
+          </div>
           <!-- BOTTOM-SIDE -->
-
-          <div class="new-acc">
-            <a href=""><h3>Creat a New Account</h3></a>
-          </div>
         </div>
       </div>
       <div class="container bottom-section">
@@ -85,13 +133,14 @@
     <!-- BOTTOM-SIDE -->
 
     <script>
-      function logoRedirect() {
-        window.location.href = "index.html";
+      function showForm() {
+        document.getElementById("show").style.display = "block";
+        document.getElementById("hide").style.display = "none";
       }
-
-      // function loadingShow() {
-      //   document.getElementById("loading-icon").style.opacity = "1";
-      // }
+      function hideForm() {
+        document.getElementById("show").style.display = "none";
+        document.getElementById("hide").style.display = "block";
+      }
     </script>
   </body>
 </html>
