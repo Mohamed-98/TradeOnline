@@ -1,5 +1,5 @@
 body {
-  background-image: url(../img/bgO.png);
+  background: url(../img/bgO.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -9,22 +9,36 @@ nav {
   box-shadow: none;
   font-family: Arial, Helvetica, sans-serif;
 }
+nav ul {
+  margin-right: 150px !important;
+}
 nav li a {
+  margin-top: 20px;
+  border-radius: 30px;
   position: relative;
-  color: rgba(51, 51, 51, 0.87);
+  color: rgba(51, 51, 51, 0.699);
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   overflow: hidden;
+  padding: 12px 15px;
+  line-height: 1.4rem;
+  transition: all 0.5s;
 }
 nav li a:hover {
-  background: rgba(255, 255, 255, 0);
-
+  background: #6344a4;
+  position: relative;
+  color: #f4f4f4 !important;
+  border-radius: 30px;
+  outline: none;
+  transition: all 0.5s;
   color: #6344a4;
 }
 .active {
+  background: #6344a4;
   position: relative;
-  color: #6344a4;
+  color: #f4f4f4;
+  border-radius: 30px;
   outline: none;
 
   letter-spacing: 2px;
@@ -34,7 +48,10 @@ nav li a:hover {
 .active:active {
   outline: none;
 }
-.active:before {
+.active:hover {
+  background: #6244a4c5;
+}
+/* .active:before {
   content: "";
   position: absolute;
   width: 80%;
@@ -42,9 +59,9 @@ nav li a:hover {
   background-color: #6344a4;
   left: 9%;
   bottom: 25%;
-}
+} */
 
-nav li a:before {
+/* nav li a:before {
   content: "";
   position: absolute;
   width: 80%;
@@ -63,7 +80,7 @@ nav li a:hover:before {
   left: 10%;
   bottom: 25%;
   transition: 0.5s;
-}
+} */
 
 .brand-logo {
   margin-left: 30px;
@@ -79,14 +96,14 @@ nav li a:hover:before {
 /*conent*/
 .content {
   width: 50%;
-  margin: 50px 0 0 40px;
+  margin: 50px 0 0 80px;
 }
 .head-content {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 1000;
   color: #333;
-  margin-top: 0px;
-  line-height: 4rem;
+  margin-top: 100px;
+  line-height: 3.5rem;
 }
 .slogan {
   font-size: 50px;
@@ -111,7 +128,7 @@ nav li a:hover:before {
 .user-area:before {
   content: "";
   position: absolute;
-  left: 50%;
+  left: 42%;
   top: 0%;
   height: 100%;
   width: 2px;
@@ -121,7 +138,7 @@ nav li a:hover:before {
   margin: 0 auto;
   background-color: #6344a4;
   border: none;
-  padding: 10px 50px;
+  padding: 15px 80px;
   border-radius: 30px;
   text-shadow: 0 0px 2px rgb(0, 0, 0);
 
@@ -136,15 +153,14 @@ nav li a:hover:before {
 .user-area a {
   color: #f4f4f4;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 23px;
 }
 .leftside {
   /* border: 2px solid #6344a4;*/
-  width: 50%;
-  margin-right: 30px;
+  width: 40%;
 }
 .rightside {
-  width: 50%;
+  width: 40%;
   margin-left: 30px;
 
   /* border:2px solid #6344a4; */
