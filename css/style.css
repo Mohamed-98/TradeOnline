@@ -35,9 +35,8 @@ nav li a:hover {
   color: #6344a4;
 }
 .active {
-  background: #6344a4;
   position: relative;
-  color: #f4f4f4;
+  color: rgba(51, 51, 51, 0.699);
   border-radius: 30px;
   outline: none;
 
