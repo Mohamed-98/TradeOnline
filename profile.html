@@ -1,0 +1,100 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+
+<body >
+
+    <div class="nav-container">
+        <div class="nav">
+            <div class="logo">
+                <img onclick="logoRedirect()" src="img/NEWLOGO2.png" height="60px" width="240px" style="margin-top: 8px; margin-left: 70px;" />
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li>Account</li>
+                    <li>Buy Section</li>
+                    <li>Another option</li>
+                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-bell"></i>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div  class="content">
+        <div class="side-bar">
+            <div class="personal">
+                <img class="profile-pic" src="profile example/1.jpg" alt="">
+                <br>
+                <h2>First Name</h2>
+            </div>
+<br>
+            <div class="side-bar-menu">
+                <ul>
+                    <li>Account Info</li>
+                    <li>Payment</li>
+                    <li>Orders</li>
+                    
+                    <li>Place an ad</li>
+                    <li>WishList</li>
+                    <li onclick="showSettings()" id="setting" class="setting">Settings <i style="display: inline-block;" id="downarrow" class="fas fa-chevron-down"></i>
+                        <li onclick="hide()" id="hide" style="border: none; display: none;"><i class="fas fa-chevron-up"></i></li>
+
+
+                        <ul id="moreSettings">
+                            
+                            <li><a href="#"> Privacy & Security</a> </li>
+                            <li><a href="#"> Edit Account</a></li>
+                            <li><a href="#"> Notification</a></li>
+                            <li><a href="#"> Log out</a></li>
+                            <li><a href="#"> DELETE ACCOUNT</a></li>
+                        
+                        </ul>
+                    </li>
+                   
+                    <li>Help & Support</li>
+                    <li>Services</li>
+                    <li style="border: none;">About Us</li>
+                </ul>
+            </div>
+        </div>
+
+        <div  class="content-page">
+        		<div class="test"></div>
+        </div>
+    </div>
+
+
+    <script>
+    function showSettings(){
+        document.getElementById("moreSettings").style.height="250px";
+        document.getElementById("hide").style.display="block";
+        document.getElementById("setting").style.border="none";
+        document.getElementById("downarrow").style.display="none";
+      
+        
+
+
+       
+    }
+    function hide(){
+        document.getElementById("moreSettings").style.height="0px";
+        document.getElementById("downarrow").style.display="inline-block";
+      
+        document.getElementById("setting").style.borderBottom="1px solid #e4e4e4";
+        document.getElementById("hide").style.display="none";
+
+    }
+   
+    </script>
+</body>
+
+</html>
