@@ -1,0 +1,154 @@
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/preview.css" />
+    <link rel="icon" href="img/logorefined.png" />
+    <title>PREVIEW</title>
+  </head>
+  <body>
+    <div class="nav-wrapper">
+      <div href="#" class="brand-logo">
+        <img
+          onclick="logoRedirect()"
+          src="img/NEWLOGO2.png"
+          height="60px"
+          width="235px"
+          style="margin: 10px 0; margin-left: 70px;"
+        />
+      </div>
+
+      <div class="menu">
+        <ul class="right hide-on-med-and-down ">
+          <li><a href="#">Contact</a></li>
+          <li><a href="index.html"> My Account </a></li>
+          <li>
+            <i
+              class="far fa-bell"
+              style="color: #6344a4; font-size: 25px; margin: 0 -30px 0 30px;"
+            ></i>
+          </li>
+          <li>
+            <i
+              class="fas fa-shopping-cart"
+              style="color: #6344a4;  font-size: 25px;  margin: 0 50px 0 50px;"
+            ></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="top-text">
+      <h1>See Your ad before Uploading</h1>
+      <p>Here you can preview your ad to check the entered information.</p>
+    </div>
+
+    <div class="card-container">
+      <div class="card">
+        <div class="card-left">
+          <div class="imgs-holder">
+            <div class="img-selector">
+              <img
+                onclick="pick1()"
+                src="img/sample1.jpg"
+                id="selector1"
+                alt=""
+              />
+              <img
+                onclick="pick2()"
+                src="img/sample2.jpg"
+                id="selector2"
+                alt=""
+              />
+              <img
+                onclick="pick3()"
+                src="img/sample3.jpg"
+                id="selector3"
+                alt=""
+              />
+              <img
+                onclick="pick4()"
+                src="img/sample4.jpg"
+                id="selector4"
+                alt=""
+              />
+            </div>
+            <div class="card-opened-img">
+              <img src="img/sample3.jpg" id="mainPhoto" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="card-right">
+          <h1 style="color: #6344a4;">Product Title</h1>
+          <br /><br />
+
+          <h2>Product Description</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ullam,
+            facere itaque suscipit blanditiis nisi consequuntur aut minus
+            voluptatem et sint ad dignissimos ex eligendi! Blanditiis
+            consequuntur voluptate deserunt ea eveniet?
+          </p>
+
+          <br />
+          <hr />
+          <br />
+          <div class="card-right-splitter">
+            <div class="h22">
+              <h2 style="color: green;">Price : $60</h2>
+            </div>
+
+            <div class="h2">
+              <h2>Owner's Info</h2>
+              <p><i class="fas fa-user"></i> Name : Hassan Mostafa</p>
+              <p><i class="fas fa-envelope"></i> E-mail : Exapmple@gmail.com</p>
+
+              <p><i class="fas fa-phone-alt"></i> Phone Number : 99956404898</p>
+            </div>
+            <br />
+          </div>
+          <div class="buttons-area">
+            <button type="button" class="Edit-btn">
+              Edit Information
+            </button>
+            <button type="button" class="submit-btn">
+              Confirm & Upload
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer style="text-align: center;  color: rgba(255, 255, 255, 0.877);">
+      Copyright &copy; 2019 by : Hassan Mostafa
+    </footer>
+
+    <script>
+      function pick1() {
+        var mainPhoto = document.getElementById("mainPhoto");
+        mainPhoto.src = selector1.src;
+      }
+      function pick2() {
+        var mainPhoto = document.getElementById("mainPhoto");
+        mainPhoto.src = selector2.src;
+      }
+      function pick3() {
+        var mainPhoto = document.getElementById("mainPhoto");
+        mainPhoto.src = selector3.src;
+      }
+      function pick4() {
+        var mainPhoto = document.getElementById("mainPhoto");
+        mainPhoto.src = selector4.src;
+      }
+
+      function logoRedirect() {
+        window.location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>
