@@ -17,7 +17,7 @@ nav ul {
   margin-right: 150px !important;
 }
 nav li a {
-  margin-top: 20px;
+  margin-top: 30px;
   border-radius: 30px;
   position: relative;
   color: rgba(51, 51, 51, 0.699);
@@ -39,6 +39,17 @@ nav li a:hover {
   color: #6344a4;
 }
 
+.search-bar{
+  
+  margin-top: 10px; 
+  margin-right: 100px;
+  width: 500px !important;
+ 
+}
+.search-bar [type=text]:focus {
+  border-bottom: 1px solid #000 !important;
+  box-shadow: 0 1px 0 0 #000 !important;
+}
 .active {
   position: relative;
   color: rgba(51, 51, 51, 0.699);
@@ -183,4 +194,10 @@ button {
   margin: 4px;
   font-size: 20px;
   color: #333;
+}
+@media screen and (max-width: 1300px){
+  .search-bar{
+    margin-right: 0 ;
+    width: 200px !important;
+  }
 }

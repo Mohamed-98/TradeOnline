@@ -39,12 +39,10 @@
 <br>
             <div class="side-bar-menu">
                 <ul>
-                    <li>Account Info</li>
-                    <li>Payment</li>
-                    <li>Orders</li>
+                   
+                    <li>Orders</li>                  
                     
-                    <li>Place an ad</li>
-                    <li>WishList</li>
+                    
                     <li onclick="showSettings()" id="setting" class="setting">Settings <i style="display: inline-block;" id="downarrow" class="fas fa-chevron-down"></i>
                         <li onclick="hide()" id="hide" style="border: none; display: none;"><i class="fas fa-chevron-up"></i></li>
 
@@ -53,7 +51,7 @@
                             
                             <li><a href="#"> Privacy & Security</a> </li>
                             <li><a href="#"> Edit Account</a></li>
-                            <li><a href="#"> Notification</a></li>
+                            
                             <li><a href="#"> Log out</a></li>
                             <li><a href="#"> DELETE ACCOUNT</a></li>
                         
@@ -75,7 +73,7 @@
 
     <script>
     function showSettings(){
-        document.getElementById("moreSettings").style.height="250px";
+        document.getElementById("moreSettings").style.height="200px";
         document.getElementById("hide").style.display="block";
         document.getElementById("setting").style.border="none";
         document.getElementById("downarrow").style.display="none";
