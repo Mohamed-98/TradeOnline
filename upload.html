@@ -1,282 +1,200 @@
-
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-      
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
-    />
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UPLOAD 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/upload.css" />
-    <title>TO | UPLOADS</title>
-    <link rel="icon" href="img/logorefined.png" />
-  
-  </head>
+    <link rel="icon" href="img/logorefined.png">
 
-  <body>
-    <!-- NAVBAR-AREA -->
+</head>
 
-    <nav>
-      <div class=" nav-wrapper">
-        <div href="#" class="brand-logo">
-          <img
-            onclick="logoRedirect()"
-            src="img/NEWLOGO2.png"
-            height="58px"
-            width="240px"
-            style="margin-top: 5px; margin-left: 70px;"
-          />
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img onclick="logoRedirect()" src="img/NEWLOGO2.png" height="58px" width="240px" />
         </div>
+        <div class="menu">
+            <ul>
 
-        <a href="#" class="sidenav-trigger " data-target="mobile-nav">
-          <i class="material-icons show-on-med-and-down darken-4">menu</i>
-        </a>
-
-        <ul class="right hide-on-med-and-down ">
-          
-          <li><a href="#">Contact</a></li>
-          <li>  <a href="index.html"> My Account </a></li>
-          <li> <i class="far fa-bell" style="color: #6344a4; margin:5px 30px;"></i>  </li>
-          <li> <i class="fas fa-shopping-cart"  style="color: #6344a4; margin:5px 30px;" ></i> </li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- NAV-ARE-ENDS -->
-
-    <!-- CONTENT-ARE -->
-    <div class="cont-container">
-      <div class="container">
-        <div class="form-area">
-          <div class="section-a">
-            <div class="title">
-              <h4><i class="fas fa-upload"></i> List a new product</h4>
-              <p>Just fill in this form</p>
-              <hr />
-            </div>
-            <div class="form-a-border">
-              <div class="form-a" style=" padding : 10px 0;">
-                <div>Product Title</div>
-                <input type="text" name="" id="" />
-
-                <div for="">Category</div>
-                <select
-                  name=""
-                  id=""
-                  style="-webkit-appearance: button; display:block; margin-top: 5px; outline: none; border: 1px solid #6344a4; border-radius: 15px;"
-                >
-                  <option value="Human">Human stuff</option>
-                  <option value="other">other</option>
-                  <option value="other">other</option>
-                  <option value="other">other</option>
-                </select>
-
-                <div class="disc" style="margin-top: 35px; border: none;">
-                  <div for="">Description</div>
-                  <textarea
-                    name=""
-                    id=""
-                    style=" resize:vertical ; outline: none; border:1px solid #6344a4;"
-                  ></textarea>
-                </div>
-
-                <div id="price-bar" for="">Price
-                  <input type="number">
-                </div >
-              </div>
-            </div>
-          </div>
-          <!-- SECTION-A-END -->
-
-          <!-- PHOTO-SECTION -->
-          <div class="photo-area">
-            <div class="photo-title">
-              <h5><i class="fas fa-images"></i> Photos</h5>
-              <p>You can upload up to 4 Pictures of your Product</p>
-            </div>
-            <br />
-
-            <div class="photo">
-                <div class="photo-divs">
-             
-                <input
-                  onchange="showImage.call(this)"
-                  style="opacity:0 ;"
-                  type="file"
-                  id="realFile1"
-                  name=""
-                  accept="image/png, image/jpeg"
-                />
-
-                <br />
-                <div id="cus-btn1" class="img">
-                  <img
-                    id="imageee"
-                    src=""
-                    style="opacity:0; margin-top:-15px;"
-                    alt=""
-                    width="196px"
-                    height="120px"
-                  /><br />
-                  <i
-                    style="text-shadow: 0 0 10px white;"
-                    id="icon1"
-                    class=" fas fa-camera "
-                  ></i>
-                </div>
-              </div>
-
-              <div class="photo-divs" >
-                <input
-                  onchange="showImage2.call(this)"
-                  style="opacity:0 ;"
-                  type="file"
-                  id="realFile2"
-                  name=""
-                  accept="image/png, image/jpeg"
-                />
-
-                <br />
-                <div id="cus-btn2" class="img">
-                  <img
-                    id="imageee2"
-                    src=""
-                    style="opacity:0; margin-top:-15px;"
-                    alt=""
-                    width="196px"
-                    height="120px"
-                  /><br />
-                  <i
-                    style="text-shadow: 0 0 10px white;"
-                    id="icon2"
-                    class=" fas fa-camera "
-                  ></i>
-                </div>
-              </div>
-
-              <div class="photo-divs">
-                <input
-                  style="opacity: 0;"
-                  type="file"
-                  id="realFile3"
-                  name=""
-                  accept="image/png, image/jpeg"
-                />
-
-                <br />
-                <div id="cus-btn3" class="img">
-                  <img
-                    src=""
-                    style="opacity:0; margin-top:-15px;"
-                    alt=""
-                    width="198px"
-                    height="120px"
-                  /><br />
-                  <i class=" fas fa-camera "></i>
-                  <!-- <i style="color: white;" class="fas fa-times"></i> -->
-                </div>
-              </div>
-
-              <div class="photo-divs">
-                <input
-                  style="opacity: 0;"
-                  type="file"
-                  id="realFile4"
-                  name=""
-                  accept="image/png, image/jpeg"
-                />
-
-                <br />
-                <div id="cus-btn4" class="img">
-                  <img
-                    src=""
-                    style="opacity:0; margin-top:-15px;"
-                    alt=""
-                    width="198px"
-                    height="120px"
-                  /><br />
-                  <i class=" fas fa-camera "></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- PHOTO-SECTION-ENDS -->
-
-          <!-- MORE-INFO-SECTION -->
-          <div class="section-a">
-            <div class="title">
-              <h5><i class="fas fa-user-tag"></i> Personal Info</h5>
-            </div>
-
-            <div class="form-a-border2">
-              <div class="form-a" style=" padding : 10px;">
-                <div>Full Name</div>
-                <input type="text" name="" id="" />
-              </div>
-
-              <div class="form-a" style=" padding : 10px;">
-                <div>Mobile</div>
-                <input type="number" name="" id="" />
-              </div>
-
-              <div class="form-a" style=" padding : 10px;">
-                <div>Email Address</div>
-                <input type="email" name="" id="" />
-              </div>
-
-              <div class="form-a" style=" padding : 10px;">
-                <div>Location</div>
-                <input type="text" name="" id="" />
-              </div>
-            </div>
-            <div class="radio-form">
-              <div class="cont-txt">Contact me by</div>
-              <div class="cont-radio">
-                <p>
-                  <label>
-                    <input name="group1" type="radio" />
-                    <span>Phone</span>
-                  </label>
-                </p>
-                <p>
-                  <label>
-                    <input name="group1" type="radio" />
-                    <span>E-mail</span>
-                  </label>
-                </p>
-                <p>
-                  <label>
-                    <input class="with-gap" name="group1" type="radio" />
-                    <span>Both</span>
-                  </label>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <input type="submit" class="submit-btn" value="SUBMIT" id="" name=""></input>
-          </div>
-
-
+                <li class="search"><input type="text" placeholder="Search..." ></li>
+                <li> <a href="#"> My Account </a></li>
+                
+                <li> <i class="fas fa-shopping-cart"></i> </li>
+            </ul>
         </div>
-      </div>
-     
     </div>
-    <footer
-    style="text-align: center; font-family:Arial, Helvetica, sans-serif; margin: 10px; 0"
-  >
-    Copyright &copy; 2019 by:Hassan Mostafa
-  </footer>
+    <div class="container">
+        <div class="content-area">
+
+
+            <div class="list-info">
+                <div class="info-text">
+                    <h2><i class="fas fa-upload"></i> List a new product</h2>
+                    <p>Just fill in this form</p>
+                    <hr />
+                </div>
+
+               
+                    <div class="form-a">
+                      <div class="leftside">
+                        <div>Product Title</div>
+                        <input type="text" name="" id="" />
+          <br>
+          <br>                
+                        <div class="cate">
+                          <div for="">Category </div>
+                          <select name="" id="">
+                              <option value="Human">Pick Category</option>
+                              <option value="other">other</option>
+                              <option value="other">other</option>
+                              <option value="other">other</option>
+                          </select>
+                        </div>
+                      
+<br>
+                        <div id="price-bar" for=""> <div> Price</div>
+                            <input type="number">
+                        </div>
+                      </div>
+
+                      <div class="rightside">
+
+                        <div class="disc">
+                          <div for="">Description</div>
+                          <textarea name="" id="" ></textarea>
+                      </div>
+
+                        
+                      </div>
+
+
+                    </div>
+                
+            </div>
+
+
+            <div class="photo-area">
+                <div class="photo-title">
+                    <h2><i class="fas fa-images"></i> Photos</h2>
+                    <p>You can upload up to 4 Pictures of your Product</p>
+                </div>
+
+
+                <div class="photo">
+                    <div class="photo-divs">
+
+                        <input onchange="showImage.call(this)" style="display:none ;" type="file" id="realFile1" name="" accept="image/png, image/jpeg" />
+
+
+                        <div id="cus-btn1" class="img">
+                            <img id="imageee" src="" alt=""  />
+                            <i id="icon1"  class=" fas fa-camera "></i>
+                        </div>
+                    </div>
+
+                    <div class="photo-divs">
+                        <input onchange="showImage2.call(this)" style="display:none ;" type="file" id="realFile2" name="" accept="image/png, image/jpeg" />
+
+
+                        <div id="cus-btn2" class="img">
+                            <img id="imageee2" src="" alt=""  />
+                            <i id="icon2" class=" fas fa-camera "></i>
+                        </div>
+                    </div>
+
+                    <div class="photo-divs">
+                      <input onchange="showImage3.call(this)" style="display:none ;" type="file" id="realFile3" name="" accept="image/png, image/jpeg" />
+
+
+                        <div id="cus-btn3" class="img">
+                            <img   id="imageee3" src="" alt=""  />
+                            <i id="icon3" class=" fas fa-camera "></i>
+
+                        </div>
+                    </div>
+
+                    <div class="photo-divs">
+                      <input onchange="showImage4.call(this)" style="display:none ;" type="file" id="realFile4" name="" accept="image/png, image/jpeg" />
+
+
+                        <div id="cus-btn4" class="img">
+                            <img   id="imageee4" src="" alt=""  />
+                            <i  id="icon4" class=" fas fa-camera "></i>
+
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- MORE-INFO-SECTION -->
+            <div class="section-a">
+                
+
+              
+               
+          
+
+           <div class="last-bit">
+            <div class="radio-form">
+              <div class="cont-txt"><h3><i class="fas fa-hands-helping"></i> &nbsp; Contact me by</h3></div>
+              <div class="cont-radio">
+                  <p>
+                      <label>
+                          <input name="group1" type="radio" />
+                          <span>Phone</span>
+                      </label>
+                  </p>
+                  <p>
+                      <label>
+                          <input name="group1" type="radio" />
+                          <span>E-mail</span>
+                      </label>
+                  </p>
+                  <p>
+                      <label>
+                          <input class="with-gap" name="group1" type="radio" />
+                          <span>Both</span>
+                      </label>
+                  </p>
+              </div>
+          </div>
+
+          <div class="btn">
+            <input type="submit" class="submit-btn" value="SUBMIT" id="" name=""></input>
+        </div>
+           </div>
+
+        </div>
+
+        
+    </div>
+
+    </div>
+
+    </div>
+
+    <footer style="text-align: center;">
+      <div class="footer">
+   <div class="icons">
+       <i class="fab fa-facebook-f"></i>
+       <i class="fab fa-behance"></i>
+     <i class="fab fa-twitter"></i>
+     <i class="fab fa-google-plus-g"></i> <br>
+     Copyright &copy; 2019 by:Hassan Mostafa
+    
+ 
+   </div>
+ </div> 
+ </footer>
+
 
     <script>
       function logoRedirect() {
@@ -309,7 +227,7 @@
             image.style.opacity = "1";
             image.style.marginTop = "15px";
 
-            iconChange.classList.add("fa-times-circle");
+            iconChange.classList.add("fa-images");
             iconChange.classList.remove("fa-camera");
           };
           obj.readAsDataURL(this.files[0]);
@@ -326,12 +244,49 @@
             image.style.opacity = "1";
             image.style.marginTop = "15px";
 
-            iconChange.classList.add("fa-times-circle");
+            iconChange.classList.add("fa-images");
+            iconChange.classList.remove("fa-camera");
+          };
+          obj.readAsDataURL(this.files[0]);
+        }
+      }
+
+      function showImage3() {
+        if (this.files && this.files[0]) {
+          var obj = new FileReader();
+          obj.onload = function(data) {
+            var image = document.getElementById("imageee3");
+            var iconChange = document.getElementById("icon3");
+            image.src = data.target.result;
+            image.style.opacity = "1";
+            image.style.marginTop = "15px";
+
+            iconChange.classList.add("fa-images");
+            iconChange.classList.remove("fa-camera");
+          };
+          obj.readAsDataURL(this.files[0]);
+        }
+      }
+
+      function showImage4() {
+        if (this.files && this.files[0]) {
+          var obj = new FileReader();
+          obj.onload = function(data) {
+            var image = document.getElementById("imageee4");
+            var iconChange = document.getElementById("icon4");
+            image.src = data.target.result;
+            image.style.opacity = "1";
+            image.style.marginTop = "15px";
+
+            iconChange.classList.add("fa-images");
             iconChange.classList.remove("fa-camera");
           };
           obj.readAsDataURL(this.files[0]);
         }
       }
     </script>
-  </body>
+
+</body>
+
+
 </html>
