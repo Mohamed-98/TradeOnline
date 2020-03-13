@@ -1,49 +1,55 @@
-*{
+* {
     list-style: none;
     text-decoration: none;
     outline: none;
 }
-h2{
+
+h2 {
     font-weight: 400;
 }
-a:active{
-color:#6244a4 ;
+
+a:active {
+    color: #6244a4;
 }
+
 body {
-   
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  
+
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
-   
+
     box-shadow: 0 0 5px #6244a4;
-    padding: 10px  ;
-    
+    padding: 10px;
+
 }
-.menu{
+
+.menu {
     margin-top: 10px;
 }
-.menu  li {
+
+.menu li {
     display: inline;
 }
 
-.menu li a{
+.menu li a {
     margin: 0px 20px;
-    font-size: 20px;    
+    font-size: 20px;
     color: #6244a4;
     padding: 10px 30px;
-    margin:0px 15px;
+    margin: 0px 15px;
     border: solid 1px #6244a4;
     border-radius: 30px 0 30px 0;
-    transition:backgroud .5s;
+    transition: backgroud .5s;
 
 }
-.search input{
+
+.search input {
     width: 700px;
     height: 20px;
     padding: 10px 20px;
@@ -52,15 +58,18 @@ body {
     font-size: 16px;
     margin-right: 150px;
 }
-.search input:focus{
+
+.search input:focus {
     border-bottom: solid 1px black;
     background-color: rgba(211, 211, 211, 0.155);
 }
-.search{
+
+.search {
     display: flex;
     justify-content: center;
 }
-.menu i{
+
+.menu i {
     border: none;
     cursor: pointer;
     margin: 0 30px;
@@ -68,49 +77,54 @@ body {
     color: #6244a4;
 
 }
+
 .menu li a:hover {
-  color: white;
+    color: white;
     background: #6244a4;
     transition: .5s;
     cursor: pointer;
-    
+
 }
-.menu i:hover{
+
+.menu i:hover {
     color: #3c1e7c;
 }
-.logo{
+
+.logo {
     margin-top: 10px;
     margin-left: 20px;
 }
 
-.container{
+.container {
     margin: 30px 150px;
     padding: 35px;
     background: #6244a428;
-    box-shadow: 0 0 5px   #19014d91;
+    box-shadow: 0 0 5px #19014d91;
 }
 
 /*-----------------------------------------------*/
 
-.list-info{
+.list-info {
     border-bottom: 2px solid #6244a4;
     padding-bottom: 30px;
     min-height: 400px;
 }
-.leftside{
+
+.leftside {
     margin-top: 10px;
-    padding:10px;
-    
+    padding: 10px;
+
     float: left;
 }
-.rightside{
+
+.rightside {
     float: right;
     margin-right: 50px;
     margin-top: 20px;
-    padding:10px
-    
+    padding: 10px
 }
-.rightside textarea{
+
+.rightside textarea {
     resize: none;
     border: none;
     border-bottom: 1px solid #6244a4;
@@ -120,99 +134,116 @@ body {
     width: 600px;
     height: 210px;
 }
- .form-a input ,select {
+
+.form-a input,
+select {
     width: 400px;
     border: none;
     border-bottom: 1px solid #6244a4;
     font-size: 15px;
     height: 30px;
     padding: 5px 15px;
-   
+
     margin-top: 2px;
     outline: none;
     transition: border .1s;
 }
-select{
+
+select {
     width: 430px;
     height: 40px;
     color: black;
 }
-.form-a input:hover ,select:hover ,textarea:hover{
-    
+
+.form-a input:hover,
+select:hover,
+textarea:hover {
+
     color: black;
     border-bottom: 3px solid #6244a4;
     transition: border .1s;
 
 }
-.form-a input:focus ,select:focus {
-    
+
+.form-a input:focus,
+select:focus {
+
     color: black;
     border-bottom: 3px solid #6244a4;
-    transition: border .1s , boxShadow .1s;;
+    transition: border .1s, boxShadow .1s;
+    ;
     box-shadow: 0 0 2px black;
 }
-#price-bar{
+
+#price-bar {
     position: relative;
 }
-#price-bar input{
+
+#price-bar input {
     padding-left: 30px;
     width: 385px;
 }
-#price-bar::before{
+
+#price-bar::before {
     position: absolute;
     content: "$";
     top: 50%;
     left: 1.5%;
     color: green;
     font-size: 20px;
-    
+
 }
 
 /*------------------------------------------------------------*/
 
-.photo-area{
+.photo-area {
     border-bottom: 2px solid #6244a4;
-    padding:50px 0 54px 0;
-    
+    padding: 50px 0 54px 0;
+
 }
 
 .photo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
-   
-  }
 
-  .last-bit{
-      margin: 20px 0;
-  }
-  .form-a div{
-      margin: 10px 0 5px 0;
-  }
-  .photo-divs{
-      
-      min-width: 50px;
-      min-height: 50px;
-  }
-  .photo-divs i {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 30px;
-      color: #6244a4;
-      cursor: pointer;
-   
-  }
-  .photo-divs i:hover{
+}
+
+.last-bit {
+    margin: 20px 0;
+}
+
+.form-a div {
+    margin: 10px 0 5px 0;
+}
+
+.photo-divs {
+
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.photo-divs i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #6244a4;
+    cursor: pointer;
+
+}
+
+.photo-divs i:hover {
     color: #3c1e7c;
-  }
-  div img{
-      max-width: 200px;
-      max-height: 200px;
-  }
+}
 
-  /*-----------------------------------------------------*/
-  .form-a-border2 input{
+div img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+/*-----------------------------------------------------*/
+.form-a-border2 input {
     width: 230px;
     border: none;
     border-bottom: 1px solid #6244a4;
@@ -221,86 +252,96 @@ select{
     padding: 5px 15px;
     color: black;
     margin: 5px 0;
-    
-    
-    
-  }
-  .form-a-border2 input:hover ,select:hover {
-    
+
+
+
+}
+
+.form-a-border2 input:hover,
+select:hover {
+
     color: black;
     border-bottom: 2px solid #6244a4;
     transition: border .1s;
 
 }
-.form-a-border2 input:focus ,select:focus {
-    
+
+.form-a-border2 input:focus,
+select:focus {
+
     color: black;
     border-bottom: 2px solid #6244a4;
     transition: border .1s;
 }
-  
-  .form-a-border2{
-      display: flex;
-      justify-content: space-between;
-      align-items: center ;
-      
-  }
 
-  footer{
-      margin: 10px 0;
-  }
-  .cont-radio{
-      display: flex;
-      
-  }
-  .cont-radio p{
-      margin:10px 20px 10px 0;
-  }
-  .btn{
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-  }
-input[type=submit]{
-    
+.form-a-border2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+footer {
+    margin: 10px 0;
+}
+
+.cont-radio {
+    display: flex;
+
+}
+
+.cont-radio p {
+    margin: 10px 20px 10px 0;
+}
+
+.btn {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+input[type=submit] {
+
     background-color: #6244a4;
     font-size: 15px;
     padding: 10px 30px;
     border: none;
-    color:#f4f4f4;
+    color: #f4f4f4;
     width: 20%;
     letter-spacing: 2px;
-    text-shadow:  0 0 2px black;
+    text-shadow: 0 0 2px black;
 }
-  @media screen and (max-width: 1500px){
-    .list-info{
+
+@media screen and (max-width: 1500px) {
+    .list-info {
         border-bottom: 2px solid #6244a4;
         padding-bottom: 30px;
-       
+
     }
 
-    .leftside{
+    .leftside {
         margin-top: 10px;
-        padding:10px;
+        padding: 10px;
         float: none;
-        
-       
+
+
     }
-    .rightside{
+
+    .rightside {
         float: none;
         margin-right: 50px;
         margin-top: 20px;
-        padding:10px
-        
-    }
-    .form-a-border2{
-        display: block;
-        justify-content: space-between;
-        align-items: center ;
-        
+        padding: 10px
     }
 
-    .rightside textarea{
+    .form-a-border2 {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .rightside textarea {
         resize: none;
         border: none;
         border-bottom: 1px solid #6244a4;
@@ -310,7 +351,8 @@ input[type=submit]{
         width: 350px;
         height: 110px;
     }
-    .form-a-border2 input{
+
+    .form-a-border2 input {
         width: 380px;
         border: none;
         border-bottom: 1px solid #6244a4;
@@ -318,12 +360,12 @@ input[type=submit]{
         min-height: 30px;
         padding: 5px 15px;
         color: black;
-        
-        
-        
-      }
 
-      .search input{
+
+
+    }
+
+    .search input {
         width: 300px;
         height: 20px;
         padding: 10px 20px;
@@ -333,15 +375,15 @@ input[type=submit]{
         margin-right: 100px;
     }
 }
-  
-@media screen and (max-width: 1100px){
-    .container{
+
+@media screen and (max-width: 1100px) {
+    .container {
         margin: 0;
         padding: 35px;
         background: #6244a428;
     }
-    
-    .form-a-border2 input{
+
+    .form-a-border2 input {
         width: 380px;
         border: none;
         border-bottom: 1px solid #6244a4;
@@ -349,11 +391,12 @@ input[type=submit]{
         min-height: 30px;
         padding: 5px 15px;
         color: black;
-        
-        
-        
-      }
-      .search input{
+
+
+
+    }
+
+    .search input {
         width: 150px;
         height: 20px;
         padding: 10px 20px;
@@ -364,51 +407,53 @@ input[type=submit]{
     }
 }
 
-@media screen and (max-width: 885px){
-    .nav{
+@media screen and (max-width: 885px) {
+    .nav {
         display: none;
     }
 
-    .form-a input ,select {
+    .form-a input,
+    select {
         width: 300px;
-}
+    }
 
-.photo {
-    display: block;
-    
-   
-}
-.photo img{
-    margin: 10px auto;
-    display: block;
-    
-}
+    .photo {
+        display: block;
 
-.form-a-border2 input{
-    width: 380px;
-    border: none;
-    border-bottom: 1px solid #6244a4;
-    font-size: 15px;
-    min-height: 30px;
-    padding: 5px 15px;
-    color: black;
-    
-    
-    
-  }
 
-  #price-bar input{
-    padding-left: 30px;
-    width: 155px;
-}
+    }
 
-.search input{
-    width: 0px;
-    height: 20px;
-    padding: 10px 20px;
-    border: none;
-    border-bottom: grey 1px solid;
-    font-size: 16px;
-    margin-right: 50px;
-}
+    .photo img {
+        margin: 10px auto;
+        display: block;
+
+    }
+
+    .form-a-border2 input {
+        width: 380px;
+        border: none;
+        border-bottom: 1px solid #6244a4;
+        font-size: 15px;
+        min-height: 30px;
+        padding: 5px 15px;
+        color: black;
+
+
+
+    }
+
+    #price-bar input {
+        padding-left: 30px;
+        width: 155px;
+    }
+
+    .search input {
+        width: 0px;
+        height: 20px;
+        padding: 10px 20px;
+        border: none;
+        border-bottom: grey 1px solid;
+        font-size: 16px;
+        margin-right: 50px;
+    }
 }
