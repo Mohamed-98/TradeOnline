@@ -17,7 +17,6 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 .nav {
     display: flex;
     justify-content: space-evenly;
@@ -472,13 +471,15 @@ p {
     transition: .5s;
     color: red;
 }
+
 .big-pic img:hover {
-    
+
     transform: scale(1.01);
     transition: .5s;
-   
+
     color: red;
 }
+
 .pic {
     position: relative;
 }
@@ -512,11 +513,14 @@ p {
     min-height: 400px;
 
     margin: 0 10px;
-
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border: 0px solid #6244a4;
+    border-bottom: 4px solid #6244a4;
+    padding: 5px 0;
     transition: box-shadow .5s;
 }
 
@@ -554,7 +558,6 @@ p {
     font-size: 20px;
 }
 
-.card-text h2 {}
 
 .card h4 {
     padding: 5px 10px;
@@ -567,6 +570,25 @@ p {
     padding: 5px 10px;
 }
 
+.Price {
+
+    color: rgb(22, 22, 22);
+    background: #6244a4af;
+    width: 50%;
+    padding: 5px;
+    position: relative;
+}
+
+.Price::after {
+    content: "";
+    position: absolute;
+    left:90%;
+    top: 3px;
+    width: 25px;
+    height: 25px;
+    background: white;
+    transform: rotate(45deg);
+}
 
 @media screen and (max-width: 1400px) {
 
@@ -712,7 +734,7 @@ p {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
     }
 
     .best-popular-cards {
@@ -777,11 +799,12 @@ p {
     }
 
     .small-pic img {
-       
+
         width: 200px;
         height: 150px;
     }
-    .big-pic img{
+
+    .big-pic img {
         width: 400px;
         height: 300px;
     }
@@ -795,7 +818,7 @@ p {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
     }
 
     .best-popular-cards {
@@ -860,11 +883,12 @@ p {
     }
 
     .small-pic img {
-       
+
         width: 150px;
         height: 100px;
     }
-    .big-pic img{
+
+    .big-pic img {
         width: 300px;
         height: 200px;
     }
@@ -883,9 +907,10 @@ p {
 }
 
 @media screen and (max-width: 400px) {
-    .sidemenu-bars{
+    .sidemenu-bars {
         top: 10%;
     }
+
     .mini-nav .menu ul li a {
         font-size: 8px;
         margin: 10px;
@@ -896,12 +921,14 @@ p {
 
 
     }
+
     .small-pic img {
-       
+
         width: 130px;
         height: 70px;
     }
-    .big-pic img{
+
+    .big-pic img {
         width: 250px;
         height: 150px;
     }
