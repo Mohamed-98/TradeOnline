@@ -1,184 +1,159 @@
 * {
-    padding: 0;
-    margin: 0;
-
+  padding: 0;
+  margin: 0;
 }
 
 body {
-
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.New {
-    ggg
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* NAVBARAREA */
 .nav-container {
-    box-shadow: 0 0 10px black;
-    height: 80px;
-
+  box-shadow: 0 0 10px black;
+  height: 80px;
 }
 
 ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .nav .menu {
-    float: right;
-    font-size: 20px;
+  float: right;
+  font-size: 20px;
 }
 
 .nav .logo {
-    float: left;
+  float: left;
 }
 
 .menu ul {
-    display: flex;
-    margin-right: 50px;
-    color: #333;
+  display: flex;
+  margin-right: 50px;
+  color: #333;
 }
 
 .menu ul li {
-    cursor: pointer;
-    margin: 15px 5px;
-    padding: 15px 15px;
-    font-weight: 600;
-    border-radius: 30px;
-    transition: .2s;
-
+  cursor: pointer;
+  margin: 15px 5px;
+  padding: 15px 15px;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: 0.2s;
 }
 
 .menu ul li:hover {
-    border-radius: 30px;
-    background-color: rgb(99, 68, 164, .8);
-    color: white;
-    transition: .2s;
-
+  border-radius: 30px;
+  background-color: rgb(99, 68, 164, 0.8);
+  color: white;
+  transition: 0.2s;
 }
 
 .menu i {
-    color: #6344a4;
-    margin: 30px;
+  color: #6344a4;
+  margin: 30px;
 
-    cursor: pointer;
-
+  cursor: pointer;
 }
-
 
 /* NAVBARAREA */
 
 /* CONTENT-AREA-START */
 
 .content {
-    margin-top: 0px;
+  margin-top: 0px;
 
-    display: flex;
-    width: 100%;
-
+  display: flex;
+  width: 100%;
 }
 
 .content .side-bar {
-    width: 20%;
-    padding-top: 20px;
-    background-image: linear-gradient(rgb(200, 200, 200, .1), white);
-    position: relative;
-
-
-
+  width: 20%;
+  padding-top: 20px;
+  background-image: linear-gradient(rgb(200, 200, 200, 0.1), white);
+  position: relative;
 }
 
 .side-bar::after {
-    content: "";
-    width: 2px;
-    height: 100%;
-    background-image: linear-gradient(rgb(150, 150, 150), white);
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-image: linear-gradient(rgb(150, 150, 150), white);
 
-    position: absolute;
-    top: -2;
-    right: 0;
-    z-index: -55
+  position: absolute;
+  top: -2;
+  right: 0;
+  z-index: -55;
 }
 
 .content .content-page {
-    width: 80%;
+  width: 80%;
 
-    overflow: scroll;
-    padding: 50px;
-
+  overflow: scroll;
+  padding: 50px;
 }
 
 .content .content-page::-webkit-scrollbar {
-    width: 0px;
-    transition: all 1s;
-    height: 0px;
-    background-color: transparent;
+  width: 0px;
+  transition: all 1s;
+  height: 0px;
+  background-color: transparent;
 }
 
 .content .content-page::-webkit-scrollbar-thumb {
-    transition: all 1s;
-    background: rgba(0, 0, 0, 0.425);
-    border-radius: 990px;
+  transition: all 1s;
+  background: rgba(0, 0, 0, 0.425);
+  border-radius: 990px;
 }
 
 .personal {
-    text-align: center;
+  text-align: center;
 }
 
 .side-bar .profile-pic {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    box-shadow: 0 0 5px 2px grey;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 2px grey;
 }
 
 .side-bar-menu {
-    font-size: 20px;
-    color: #333;
+  font-size: 20px;
+  color: #333;
 }
 
 .side-bar-menu ul li:hover {
-    background: lightgrey;
+  background: lightgrey;
 }
 
 .side-bar-menu ul li {
-    padding: 15px 30px;
+  padding: 15px 30px;
 
-
-    border-bottom: 1px solid rgb(150, 150, 150);
+  border-bottom: 1px solid rgb(150, 150, 150);
 }
 
 #moreSettings {
+  height: 0px;
 
-
-    height: 0px;
-
-    font-size: 18px;
-    border: none;
-    overflow: hidden;
-    transition: .5s;
-
+  font-size: 18px;
+  border: none;
+  overflow: hidden;
+  transition: 0.5s;
 }
 
 #moreSettings li {
-    font-size: 16px;
-
-
-
-
+  font-size: 16px;
 }
 
 #moreSettings li a {
-    margin-left: 30px;
-    text-decoration: none;
-    color: #333;
+  margin-left: 30px;
+  text-decoration: none;
+  color: #333;
 }
 
-
 .test {
-    background: rgb(197, 10, 10, 0);
-    width: 100%;
-    height: 650px;
+  background: rgb(197, 10, 10, 0);
+  width: 100%;
+  height: 650px;
 }
