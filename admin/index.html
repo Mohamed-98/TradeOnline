@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Main</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/stylemin.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h3>TradeOnline<span class="logo2"> admin</span></h3>
+        </div>
+        <div class="menu">
+            <ul>
+                <li> Acoount&nbsp; &nbsp; <i onclick="showSideMenu()" class="fas fa-arrow-down"></i>&nbsp; &nbsp;</li>
+                <ul class="side-menu">
+                    <li class="close"><i onclick="hideSideMenu()" class="fas fa-times"></i></li>
+                    <li>Logout</li>
+                    <li>Settings</li>
+                </ul>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="side-bar">
+            <ul>
+                <li onclick="showManager()">Manage Posts</li>
+                <li>Manage User</li>
+                <li onclick="showTopicside()">Manage Topics</li>
+            </ul>
+        </div>
+        <div class="content-side">
+
+
+            <div class="manager">
+                <div class="big-btns">
+                    <a href="#" class="btn-bg" onclick="showManage()">Manage Posts</a>
+                    <a href="#" class="btn-bg" onclick="showEditor()">Add Posts</a>
+                </div>
+                <br><br><br>
+                <div class="manage">
+                    <h2>Manage Posts</h2>
+                    <table>
+                        <thead>
+                            <th>N</th>
+                            <th>Title</th>
+                            <th>Auther</th>
+                            <th colspan="3">Action</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>First Post</td>
+                                <td>Hassan</td>
+                                <td><a href="#" class="edit">Edit</a></td>
+                                <td><a href="#" class="pub">Publish</a></td>
+                                <td><a href="#" class="delete">Delete</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>secod Post</td>
+                                <td>Gdo</td>
+                                <td><a href="#" class="edit">Edit</a></td>
+                                <td><a href="#" class="pub">Publish</a></td>
+                                <td><a href="#" class="delete">Delete</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td>Third Post</td>
+                                <td>Omar</td>
+                                <td><a href="#" class="edit">Edit</a></td>
+                                <td><a href="#" class="pub">Publish</a></td>
+                                <td><a href="#" class="delete">Delete</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>5</td>
+                                <td>4th Post</td>
+                                <td>Sameh</td>
+                                <td><a href="#" class="edit">Edit</a></td>
+                                <td><a href="#" class="pub">Publish</a></td>
+                                <td><a href="#" class="delete">Delete</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>6</td>
+                                <td>6th Post</td>
+                                <td>Abanoub</td>
+                                <td><a href="#" class="edit">Edit</a></td>
+                                <td><a href="#" class="pub">Publish</a></td>
+                                <td><a href="#" class="delete">Delete</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="add-post">
+
+                    <form>
+                        <div class="title">
+                            <label for="">Title</label><br>
+                            <input type="text" name="" class="text-input">
+                        </div>
+                        <br>
+                        <div class="editor">
+                            <label for="">Editor</label><br>
+                            <textarea name="" cols="30" rows="30" id="editor"></textarea>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="">Category</label><br>
+                            <select name="" id="" class="category">
+                                <option value="">Books</option>
+                                <option value="">Art</option>
+                                <option value="">Fashion</option>
+                                <option value="">Electronics</option>
+                                <option value="">Furniture</option>
+                                <option value="">Health</option>
+                                <option value="">Sport</option>
+                            </select>
+                        </div>
+                    </form>
+                    <br><br>
+
+                    <div>
+                        <a href="#" class="add">Submit</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="topics-side">
+
+                <div class="big-btns">
+                    <a href="#" class="btn-bg" onclick="showTopicSide()" >Manage Topics</a>
+                    <a href="#" class="btn-bg"   onclick="showTopicsEditor()"> Add Topics</a>
+                </div>
+                <br><br><br>
+                <div class="topics-table">
+                    <h2>Manage Topics</h2>
+                    <table>
+                        <thead>
+                            <th>N</th>
+                            <th>Name</th>
+                            <th colspan="3">Action</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Electro</td>
+                                <td><a href="#" class="edit">Edit</a></td>
+                                <td><a href="#" class="delete">Delete</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>fashon</td>
+                                <td><a href="#" class="edit">Edit</a></td>
+                                <td><a href="#" class="delete">Delete</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td>Furniture</td>
+                                <td><a href="#" class="edit">Edit</a></td>
+                                <td><a href="#" class="delete">Delete</a></td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="add-topic">
+
+                    <form>
+                        <div class="title">
+                            <label for="">Name</label><br>
+                            <input type="text" name="" class="text-input">
+                        </div>
+                        <br>
+                        <div  class="editor">
+                            <label for="">Discription</label><br>
+                            <textarea name="" cols="100" rows="10" id="editor"></textarea>
+                        </div>
+                        <br>
+                        
+                    </form>
+                    <br><br>
+
+                    <div>
+                        <a href="#" class="add">Submit</a>
+                    </div>
+
+                </>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    </div>
+
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/18.0.0/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor'), {
+                toolbar: ['heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote'],
+                heading: {
+                    options: [{
+                            model: 'paragraph',
+                            title: 'Paragraph',
+                            class: 'ck-heading_paragraph'
+                        },
+                        {
+                            model: 'heading1',
+                            view: 'h1',
+                            title: 'Heading 1',
+                            class: 'ck-heading_heading1'
+                        },
+                        {
+                            model: 'heading2',
+                            view: 'h2',
+                            title: 'Heading 2',
+                            class: 'ck-heading_heading2'
+                        }
+                    ]
+                }
+            })
+            .catch(error => {
+                console.log(error);
+            });
+
+        function showSideMenu() {
+            document.querySelector(".side-menu").style.height = "80px";
+        }
+
+        function hideSideMenu() {
+            document.querySelector(".side-menu").style.height = "0";
+        }
+
+
+        function showManage() {
+            document.querySelector('.add-post').style.display = 'none';
+            document.querySelector('.manage').style.display = 'block';
+        
+
+
+        }
+
+        function showManager() {
+         
+            document.querySelector('.manager').style.display = 'block';
+            document.querySelector('.topics-side').style.display = 'none';
+
+
+        }
+
+        function showEditor() {
+            document.querySelector('.add-post').style.display = 'block';
+            document.querySelector('.manage').style.display = 'none';
+
+        }
+
+        function showTopicSide() {
+            document.querySelector('.add-topic').style.display = 'none';
+          
+            document.querySelector('.topics-table').style.display = 'block';
+    
+
+
+            
+        }
+        function showTopicside() {
+          
+            document.querySelector('.manager').style.display = 'none';
+            document.querySelector('.topics-side').style.display = 'block';
+    
+
+
+            
+        }
+        function showTopicsEditor(){
+            document.querySelector('.topics-table').style.display = 'none';
+            document.querySelector('.add-topic').style.display = 'block';
+        }
+    </script>
+
+</body>
+
+</html>

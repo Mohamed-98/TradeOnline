@@ -1,0 +1,278 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    padding-top: 0;
+
+}
+
+body {
+    background: #f4f4f4;
+    margin: 0;
+    color: #333;
+}
+
+nav {
+    padding: 0 15px;
+    background: lightskyblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo2 {
+        font-size: 15px;
+        font-weight: lighter;
+        text-transform: capitalize;
+    }
+
+    .side-menu {
+        position: absolute;
+        height: 0;
+        background: rgba(250, 250, 250, 0.7);
+        border-radius: 5px;
+        box-shadow: 0 0 3px black;
+        right: 15px;
+        top: 50px;
+
+        overflow: hidden;
+        width: 150px;
+        transition: .5s;
+
+        .close {
+            position: absolute;
+            top: -5px;
+            right: -15px;
+            transition: .5;
+        }
+
+        li {
+            padding: 10px 30px;
+        }
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+
+
+
+    .side-bar {
+
+        min-width: 280px;
+        background: rgb(14, 88, 116);
+        height: 90vh;
+        color: #e4e4e4;
+
+        ul {
+            padding: 0px;
+
+        }
+
+        li {
+
+            border-bottom: 1px solid rgb(26, 26, 26);
+            padding: 15px 15px;
+            width: 100%s;
+            font-size: 18px;
+        }
+
+        li:hover {
+            background: rgb(22, 64, 90);
+        }
+    }
+
+    .content-side {
+        width: 100%;
+        margin-left: 80px;
+
+        .big-btns {
+            margin-top: 50px;
+
+            .btn-bg {
+                padding: 15px 30px;
+                background-color: rgb(76, 181, 247);
+                color: #333;
+                margin-right: 10px;
+                font-weight: bold;
+                border-radius: 5px;
+
+                a {
+                    color: #333;
+                }
+            }
+        }
+
+        .manager{
+
+        
+        .manage {
+            margin-top: -40px;
+            display: block;
+
+            table {
+                border-collapse: collapse;
+                width: 70%;
+
+            }
+
+            table,
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 15px 0;
+                text-align: center;
+
+            }
+
+            th {
+                background-color: lightskyblue;
+                color: #333;
+            }
+
+            tr:nth-child(even) {
+                background-color: #eee;
+            }
+
+            tr:hover {
+                background-color: #ddd;
+            }
+
+            .delete {
+                color: red;
+
+            }
+
+            .pub {
+                color: rgb(2, 92, 2);
+
+            }
+        }
+
+        .add-post {
+            margin: 0 50px 0 0;
+            display: none;
+
+            .text-input {
+                width: 700px;
+                outline: none;
+                padding: 10px;
+                border: 1px solid lightgray;
+            }
+
+            .editor {
+                width: 725px;
+
+                #editor {
+                    outline: none;
+                    font-size: 17px;
+                    color: #333;
+                }
+            }
+
+            .category {
+                border: 1px solid lightgray;
+                outline: none;
+                width: 725px;
+                padding: 10px;
+
+            }
+
+
+        }
+
+        .add {
+            background-color: rgb(76, 181, 247);
+            padding: 10px 20px;
+            color: #333;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+        }
+
+        .topics-side{
+
+            display: none;
+
+            .add-topic {
+                margin: 0 50px 0 0;
+                display: none;
+    
+                .text-input {
+                    width: 700px;
+                    outline: none;
+                    padding: 10px;
+                    border: 1px solid lightgray;
+                }
+    
+                .editor {
+                    width: 725px;
+    
+                    #editor {
+                        outline: none;
+                        font-size: 17px;
+                        color: #333;
+                    }
+                }
+    
+                .category {
+                    border: 1px solid lightgray;
+                    outline: none;
+                    width: 725px;
+                    padding: 10px;
+    
+                }
+    
+    
+            }
+    
+            .add {
+                background-color: rgb(76, 181, 247);
+                padding: 10px 20px;
+                color: #333;
+                font-weight: bold;
+                border-radius: 3px;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 70%;
+
+            }
+
+            table,
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 15px 0;
+                text-align: center;
+
+            }
+
+            th {
+                background-color: lightskyblue;
+                color: #333;
+            }
+
+            tr:nth-child(even) {
+                background-color: #eee;
+            }
+
+            tr:hover {
+                background-color: #ddd;
+            }
+
+            .delete {
+                color: red;
+
+            }
+
+            .pub {
+                color: rgb(2, 92, 2);
+
+            }
+        }
+}
+
+
+}
