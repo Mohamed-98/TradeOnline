@@ -16,7 +16,9 @@
         </div>
         <div class="menu">
             <ul>
-                <li> Acoount&nbsp; &nbsp; <i onclick="showSideMenu()" class="fas fa-arrow-down"></i>&nbsp; &nbsp;</li>
+                <li> Admin Name&nbsp; &nbsp; <i style="z-index: 5;" onclick="showSideMenu()"
+                        class="fas fa-arrow-down"></i>&nbsp; &nbsp;
+                </li>
                 <ul class="side-menu">
                     <li class="close"><i onclick="hideSideMenu()" class="fas fa-times"></i></li>
                     <li>Logout</li>
@@ -29,13 +31,217 @@
     <div class="content">
         <div class="side-bar">
             <ul>
-                <li onclick="showManager()">Manage Posts</li>
-                <li>Manage User</li>
-                <li onclick="showTopicside()">Manage Topics</li>
+                <li onclick="showActionCenter()"><i class="fas fa-user-shield"></i> Admin Action Center</li>
+                <li onclick="showManager()"><i class="far fa-list-alt"></i> Manage Posts</li>
+                <li onclick="showUserSection()"><i class="far fa-address-card"></i> Manage User</li>
+                <li onclick="showTopicside()"><i class="fas fa-paragraph"></i> Manage Topics</li>
+
             </ul>
         </div>
+
+
         <div class="content-side">
 
+
+            <div class="action-center">
+                <div class="big-btns">
+                    <a href="#" class="btn-bg" onclick="newRegiBtn()">New Registered Users</a>
+                    <a href="#" class="btn-bg" onclick="notifBtn()">Notifications</a>
+                    <a href="#" class="btn-bg" onclick="alertsBtn()">Alerts</a>
+                    <a href="#" class="btn-bg" onclick="compsBtn()">Complains</a>
+
+                </div>
+                <br><br><br>
+
+                <div class="newUsers">
+                    <div class="card">
+                        <div class="card-info">
+                            <div class="pics">
+
+                                <img src="img/1.jpg" width="70px" height="70px">
+                            </div>
+                            <span class="bolds">- Full Name </span> : Hassan Mostafa Hassan <br>
+                            <span class="bolds">- ID </span>: 123456789 <br>
+                            <span class="bolds">- Address </span>: Example <br>
+                            <span class="bolds">- E-mail </span>: example@gmail.com <br>
+                            <span class="bolds">- Information </span>: Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nihil,
+                            soluta?
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Accept</a><br>
+                            <hr>
+                            <a href="#">Decline</a>
+
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="card-info">
+                            <div class="pics">
+
+                                <img src="img/1.jpg" width="70px" height="70px">
+                            </div>
+                            <span class="bolds">- Full Name </span> : Hassan Mostafa Hassan <br>
+                            <span class="bolds">- ID </span>: 123456789 <br>
+                            <span class="bolds">- Address </span>: Example <br>
+                            <span class="bolds">- E-mail </span>: example@gmail.com <br>
+                            <span class="bolds">- Information </span>: Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nihil,
+                            soluta?
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Accept</a><br>
+                            <hr>
+                            <a href="#">Decline</a>
+
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="card-info">
+                            <div class="pics">
+
+                                <img src="img/1.jpg" width="70px" height="70px">
+                            </div>
+                            <span class="bolds">- Full Name </span> : Hassan Mostafa Hassan <br>
+                            <span class="bolds">- ID </span>: 123456789 <br>
+                            <span class="bolds">- Address </span>: Example <br>
+                            <span class="bolds">- E-mail </span>: example@gmail.com <br>
+                            <span class="bolds">- Information </span>: Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nihil,
+                            soluta?
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Accept</a><br>
+                            <hr>
+                            <a href="#">Decline</a>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="notif-area">
+                    <div class="notif">
+                        <p class="bolds">Notification title</p>
+                        <p style="color: grey;">17/12/2020</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, accusamus? Odit, officia
+                            sequi consequatur veritatis sint id perspiciatis, eaque tempore fugit voluptates cumque
+                            dicta cum? Dolorem quibusdam illo ut expedita?</p>
+                    </div>
+                    <div class="notif">
+                        <p class="bolds">Notification title</p>
+                        <p style="color: grey;">17/12/2020</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, accusamus? Odit, officia
+                            sequi consequatur veritatis sint id perspiciatis, eaque tempore fugit voluptates cumque
+                            dicta cum? Dolorem quibusdam illo ut expedita?</p>
+                    </div>
+                    <div class="notif">
+                        <p class="bolds">Notification title</p>
+                        <p style="color: grey;">17/12/2020</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, accusamus? Odit, officia
+                            sequi consequatur veritatis sint id perspiciatis, eaque tempore fugit voluptates cumque
+                            dicta cum? Dolorem quibusdam illo ut expedita?</p>
+                    </div>
+
+                </div>
+
+                <div class="alert-area">
+                    <div class="alert">
+                        <p class="delete">Shipment Canceled</p>
+                        <p style="color: grey;">17/12/2020</p>
+                        <p><span class="bolds"> Alert Info</span>: Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Rem, totam! Ex nihil impedit sapiente Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Rem, totam! Ex nihil impedit sapiente Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Rem, totam! Ex nihil impedit sapiente explicabo blanditiis commodi eaque voluptatibus
+                            harum.</p>
+                    </div>
+
+                    <div class="alert">
+                        <p class="delete">Accident</p>
+                        <p style="color: grey;">17/12/2020</p>
+                        <p><span class="bolds"> Alert Info</span>: Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Rem, totam! Ex nihil impedit sapiente Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Rem, totam! Ex nihil impedit sapiente Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Rem, totam! Ex nihil impedit sapiente explicabo blanditiis commodi eaque voluptatibus
+                            harum.</p>
+                    </div>
+
+                    <div class="alert">
+                        <p class="delete">Shipment delayed</p>
+                        <p style="color: grey;">17/12/2020</p>
+                        <p><span class="bolds"> Alert Info</span>: Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Rem, totam! Ex nihil impedit sapiente Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Rem, totam! Ex nihil impedit sapiente Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Rem, totam! Ex nihil impedit sapiente explicabo blanditiis commodi eaque voluptatibus
+                            harum.</p>
+                    </div>
+                </div>
+
+                <div class="comp-area">
+                    <div class="comp">
+                        <p><span class="bolds">From : </span>Hassan</p>
+                        <p style="color: grey;"><span class="bolds" style="color: black;">At : </span> 17/12/2020 </p>
+                        <p><span class="bolds">About : </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Laboriosam ipsum illum voluptate sint autem doloribus aut a hic laborum magni dicta qui
+                            dolorem harum aliquid, dolores dolorum eveniet reprehenderit? Adipisci impedit doloribus
+                            ullam nostrum quia iure vitae consectetur perspiciatis tempora, dolores a laborum delectus
+                            nulla animi beatae, saepe voluptate provident nobis rerum cupiditate reiciendis perferendis
+                            ut? Quia velit iste delectus dolores accusantium? Veniam minima dolor at, quas consectetur
+                            omnis ipsum placeat ex doloremque illo atque unde, inventore, voluptatem a eligendi officia
+                            alias ullam commodi adipisci laudantium reprehenderit repellendus accusantium. Nostrum
+                            praesentium cupiditate dolorem aspernatur aut recusandae reiciendis sunt consequuntur quod!
+                        </p>
+                        <a href="">Reply</a> <br>
+                        <a href="">Delete</a>
+                    </div>
+
+                    <div class="comp">
+                        <p><span class="bolds">From : </span>Ahmed</p>
+                        <p style="color: grey;"><span class="bolds" style="color: black;">At : </span> 17/12/2020 </p>
+                        <p><span class="bolds">About : </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Laboriosam ipsum illum voluptate sint autem doloribus aut a hic laborum magni dicta qui
+                            dolorem harum aliquid, dolores dolorum eveniet reprehenderit? Adipisci impedit doloribus
+                            ullam nostrum quia iure vitae consectetur perspiciatis tempora, dolores a laborum delectus
+                            nulla animi beatae, saepe voluptate provident nobis rerum cupiditate reiciendis perferendis
+                            ut? Quia velit iste delectus dolores accusantium? Veniam minima dolor at, quas consectetur
+                            omnis ipsum placeat ex doloremque illo atque unde, inventore, voluptatem a eligendi officia
+                            alias ullam commodi adipisci laudantium reprehenderit repellendus accusantium. Nostrum
+                            praesentium cupiditate dolorem aspernatur aut recusandae reiciendis sunt consequuntur quod!
+                        </p>
+                        <a href="">Reply</a> <br>
+                        <a href="">Delete</a>
+                    </div>
+
+                    <div class="comp">
+                        <p><span class="bolds">From : </span>Ali</p>
+                        <p style="color: grey;"><span class="bolds" style="color: black;">At : </span> 17/12/2020 </p>
+                        <p><span class="bolds">About : </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Laboriosam ipsum illum voluptate sint autem doloribus aut a hic laborum magni dicta qui
+                            dolorem harum aliquid, dolores dolorum eveniet reprehenderit? Adipisci impedit doloribus
+                            ullam nostrum quia iure vitae consectetur perspiciatis tempora, dolores a laborum delectus
+                            nulla animi beatae, saepe voluptate provident nobis rerum cupiditate reiciendis perferendis
+                            ut? Quia velit iste delectus dolores accusantium? Veniam minima dolor at, quas consectetur
+                            omnis ipsum placeat ex doloremque illo atque unde, inventore, voluptatem a eligendi officia
+                            alias ullam commodi adipisci laudantium reprehenderit repellendus accusantium. Nostrum
+                            praesentium cupiditate dolorem aspernatur aut recusandae reiciendis sunt consequuntur quod!
+                        </p>
+                        <br>
+
+                        <a href="">Reply</a> <br>
+                        <a href="">Delete</a>
+                    </div>
+
+                </div>
+
+            </div>
 
             <div class="manager">
                 <div class="big-btns">
@@ -44,58 +250,124 @@
                 </div>
                 <br><br><br>
                 <div class="manage">
-                    <h2>Manage Posts</h2>
+                    <h2>Manage Pending Posts</h2>
                     <table>
                         <thead>
                             <th>N</th>
                             <th>Title</th>
-                            <th>Auther</th>
+                            <th>Uploader</th>
+                            <th>Contains</th>
                             <th colspan="3">Action</th>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>1</td>
                                 <td>First Post</td>
-                                <td>Hassan</td>
+                                <td>Hassan Mostafa Hassan Mohammed </td>
+                                <td class="contains">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat,
+                                    aut.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, aut.Lorem
+                                    ipsum dolor sit, amet consectetur adipisicing elit. Placeat, aut.Lorem ipsum dolor
+                                    sit, amet consectetur adipisicing elit. Placeat, aut.Lorem ipsum dolor sit, amet
+                                    consectetur adipisicing elit. Placeat, aut.
+
+                                    <div class="pics">
+                                        <img src="img/sample3.jpg" width="80px" height="80px">
+                                        <img src="img/sample2.jpg" width="80px" height="80px">
+                                        <img src="img/sample3.jpg" width="80px" height="80px">
+                                        <img src="img/sample4.jpg" width="80px" height="80px">
+                                    </div>
+                                </td>
                                 <td><a href="#" class="edit">Edit</a></td>
                                 <td><a href="#" class="pub">Publish</a></td>
-                                <td><a href="#" class="delete">Delete</a></td>
+                                <td><a href="#" class="delete">Decline</a></td>
                             </tr>
 
                             <tr>
                                 <td>2</td>
                                 <td>secod Post</td>
                                 <td>Gdo</td>
+                                <td class="contains">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat,
+                                    aut.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, aut.Lorem
+                                    ipsum dolor sit, amet consectetur adipisicing elit. Placeat, aut.Lorem ipsum dolor
+                                    sit, amet consectetur adipisicing elit. Placeat, aut.Lorem ipsum dolor sit, amet
+                                    consectetur adipisicing elit. Placeat, aut.
+
+                                    <div class="pics">
+                                        <img src="img/sample3.jpg" width="80px" height="80px">
+                                        <img src="img/sample2.jpg" width="80px" height="80px">
+                                        <img src="img/sample3.jpg" width="80px" height="80px">
+                                        <img src="img/sample4.jpg" width="80px" height="80px">
+                                    </div>
+                                </td>
                                 <td><a href="#" class="edit">Edit</a></td>
                                 <td><a href="#" class="pub">Publish</a></td>
-                                <td><a href="#" class="delete">Delete</a></td>
+                                <td><a href="#" class="delete">Decline</a></td>
                             </tr>
 
                             <tr>
                                 <td>3</td>
                                 <td>Third Post</td>
                                 <td>Omar</td>
+                                <td class="contains">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat,
+                                    aut.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, aut.Lorem
+                                    ipsum dolor sit, amet consectetur adipisicing elit. Placeat, aut.Lorem ipsum dolor
+                                    sit, amet consectetur adipisicing elit. Placeat, aut.Lorem ipsum dolor sit, amet
+                                    consectetur adipisicing elit. Placeat, aut.
+
+                                    <div class="pics">
+                                        <img src="img/sample3.jpg" width="80px" height="80px">
+                                        <img src="img/sample2.jpg" width="80px" height="80px">
+                                        <img src="img/sample3.jpg" width="80px" height="80px">
+                                        <img src="img/sample4.jpg" width="80px" height="80px">
+                                    </div>
+                                </td>
                                 <td><a href="#" class="edit">Edit</a></td>
                                 <td><a href="#" class="pub">Publish</a></td>
-                                <td><a href="#" class="delete">Delete</a></td>
+                                <td><a href="#" class="delete">Decline</a></td>
                             </tr>
 
                             <tr>
                                 <td>5</td>
                                 <td>4th Post</td>
                                 <td>Sameh</td>
+                                <td class="contains">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat,
+                                    aut.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, aut.Lorem
+                                    ipsum dolor sit, amet consectetur adipisicing elit. Placeat, aut.Lorem ipsum dolor
+                                    sit, amet consectetur adipisicing elit. Placeat, aut.Lorem ipsum dolor sit, amet
+                                    consectetur adipisicing elit. Placeat, aut.
+
+                                    <div class="pics">
+                                        <img src="img/sample3.jpg" width="80px" height="80px">
+                                        <img src="img/sample2.jpg" width="80px" height="80px">
+                                        <img src="img/sample3.jpg" width="80px" height="80px">
+                                        <img src="img/sample4.jpg" width="80px" height="80px">
+                                    </div>
+                                </td>
                                 <td><a href="#" class="edit">Edit</a></td>
                                 <td><a href="#" class="pub">Publish</a></td>
-                                <td><a href="#" class="delete">Delete</a></td>
+                                <td><a href="#" class="delete">Decline</a></td>
                             </tr>
 
                             <tr>
                                 <td>6</td>
                                 <td>6th Post</td>
                                 <td>Abanoub</td>
+                                <td class="contains">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat,
+                                    aut.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, aut.Lorem
+                                    ipsum dolor sit, amet consectetur adipisicing elit. Placeat, aut.Lorem ipsum dolor
+                                    sit, amet consectetur adipisicing elit. Placeat, aut.Lorem ipsum dolor sit, amet
+                                    consectetur adipisicing elit. Placeat, aut.
+
+                                    <div class="pics">
+                                        <img src="img/sample3.jpg" width="80px" height="80px">
+                                        <img src="img/sample2.jpg" width="80px" height="80px">
+                                        <img src="img/sample3.jpg" width="80px" height="80px">
+                                        <img src="img/sample4.jpg" width="80px" height="80px">
+                                    </div>
+                                </td>
                                 <td><a href="#" class="edit">Edit</a></td>
                                 <td><a href="#" class="pub">Publish</a></td>
-                                <td><a href="#" class="delete">Delete</a></td>
+                                <td><a href="#" class="delete">Decline</a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -137,11 +409,119 @@
             </div>
 
 
+            <div class="user-section">
+                <h2>Registered Users</h2>
+                <table>
+                    <thead>
+                        <th>N</th>
+                        <th>Name</th>
+                        <th>ID</th>
+                        <th>Account Data</th>
+                        <th colspan="3">Action</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Hassan</td>
+                            <td>1234567890</td>
+                            <td class="contains">
+                                - <span class="bolds">E-mail address</span> : example@gmail.com <br>
+                                - <span class="bolds">Phone</span> : 1202105460 <br>
+                                - <span class="bolds">Home Address</span> : Another example <br>
+                                <hr>
+                                <span class="bolds">Extra Information</span> : Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Delectus
+                                rem reiciendis minima iste nostrum perferendis voluptate cupiditate iusto rerum
+                                similique.
+                            </td>
+                            <td><a href="#" class="edit">Edit</a></td>
+
+                            <td><a href="#" class="delete">Delete</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>gado</td>
+                            <td>1234567890</td>
+                            <td class="contains">
+                                - <span class="bolds">E-mail address</span> : example@gmail.com <br>
+                                - <span class="bolds">Phone</span> : 1202105460 <br>
+                                - <span class="bolds">Home Address</span> : Another example <br>
+                                <hr>
+                                <span class="bolds">Extra Information</span> : Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Delectus
+                                rem reiciendis minima iste nostrum perferendis voluptate cupiditate iusto rerum
+                                similique.
+
+                            </td>
+                            <td><a href="#" class="edit">Edit</a></td>
+
+                            <td><a href="#" class="delete">Delete</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>omar</td>
+                            <td>1234567890</td>
+                            <td class="contains">
+                                - <span class="bolds">E-mail address</span> : example@gmail.com <br>
+                                - <span class="bolds">Phone</span> : 1202105460 <br>
+                                - <span class="bolds">Home Address</span> : Another example <br>
+                                <hr>
+                                <span class="bolds">Extra Information</span> : Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Delectus
+                                rem reiciendis minima iste nostrum perferendis voluptate cupiditate iusto rerum
+                                similique. </td>
+                            <td><a href="#" class="edit">Edit</a></td>
+
+                            <td><a href="#" class="delete">Delete</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>sameh</td>
+                            <td>S654048545</td>
+                            <td class="contains">
+                                - <span class="bolds">E-mail address</span> : example@gmail.com <br>
+                                - <span class="bolds">Phone</span> : 1202105460 <br>
+                                - <span class="bolds">Home Address</span> : Another example <br>
+                                <hr>
+                                <span class="bolds">Extra Information</span> : Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Delectus
+                                rem reiciendis minima iste nostrum perferendis voluptate cupiditate iusto rerum
+                                similique.</td>
+                            <td><a href="#" class="edit">Edit</a></td>
+
+                            <td><a href="#" class="delete">Delete</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td>Abanoub</td>
+                            <td>9889745465454</td>
+                            <td class="contains">
+                                - <span class="bolds">E-mail address</span> : example@gmail.com <br>
+                                - <span class="bolds">Phone</span> : 1202105460 <br>
+                                - <span class="bolds">Home Address</span> : Another example <br>
+                                <hr>
+                                <span class="bolds">Extra Information</span> : Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Delectus
+                                rem reiciendis minima iste nostrum perferendis voluptate cupiditate iusto rerum
+                                similique.</td>
+                            <td><a href="#" class="edit">Edit</a></td>
+
+                            <td><a href="#" class="delete">Delete</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
             <div class="topics-side">
 
                 <div class="big-btns">
-                    <a href="#" class="btn-bg" onclick="showTopicSide()" >Manage Topics</a>
-                    <a href="#" class="btn-bg"   onclick="showTopicsEditor()"> Add Topics</a>
+                    <a href="#" class="btn-bg" onclick="showTopicSide()">Manage Topics</a>
+                    <a href="#" class="btn-bg" onclick="showTopicsEditor()"> Add Topics</a>
                 </div>
                 <br><br><br>
                 <div class="topics-table">
@@ -187,12 +567,12 @@
                             <input type="text" name="" class="text-input">
                         </div>
                         <br>
-                        <div  class="editor">
+                        <div class="editor">
                             <label for="">Discription</label><br>
                             <textarea name="" cols="100" rows="10" id="editor"></textarea>
                         </div>
                         <br>
-                        
+
                     </form>
                     <br><br>
 
@@ -200,18 +580,25 @@
                         <a href="#" class="add">Submit</a>
                     </div>
 
-                </>
+
+                </div>
+
+
             </div>
-
-
         </div>
-    </div>
 
 
+
+
+
     </div>
+    <footer style="margin: 10px;
+    text-align: center;">By:Hassan Mostafa</footer>
 
 
     <script src="https://cdn.ckeditor.com/ckeditor5/18.0.0/classic/ckeditor.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js"
+        integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous"></script>
     <script>
         ClassicEditor
             .create(document.querySelector('#editor'), {
@@ -248,52 +635,88 @@
         function hideSideMenu() {
             document.querySelector(".side-menu").style.height = "0";
         }
+        // $('html').click(function () {
+        //     document.querySelector(".side-menu").style.height = "0px";
+        // });
+
 
 
         function showManage() {
             document.querySelector('.add-post').style.display = 'none';
             document.querySelector('.manage').style.display = 'block';
-        
-
-
         }
 
         function showManager() {
-         
             document.querySelector('.manager').style.display = 'block';
             document.querySelector('.topics-side').style.display = 'none';
-
+            document.querySelector('.user-section').style.display = 'none';
+            document.querySelector('.action-center').style.display = 'none';
 
         }
 
         function showEditor() {
             document.querySelector('.add-post').style.display = 'block';
             document.querySelector('.manage').style.display = 'none';
-
         }
 
         function showTopicSide() {
             document.querySelector('.add-topic').style.display = 'none';
-          
             document.querySelector('.topics-table').style.display = 'block';
-    
-
-
-            
         }
+
         function showTopicside() {
-          
             document.querySelector('.manager').style.display = 'none';
             document.querySelector('.topics-side').style.display = 'block';
-    
+            document.querySelector('.user-section').style.display = 'none';
+            document.querySelector('.action-center').style.display = 'none';
 
-
-            
         }
-        function showTopicsEditor(){
+
+        function showTopicsEditor() {
             document.querySelector('.topics-table').style.display = 'none';
             document.querySelector('.add-topic').style.display = 'block';
         }
+
+        function showUserSection() {
+            document.querySelector('.manager').style.display = 'none';
+            document.querySelector('.topics-side').style.display = 'none';
+            document.querySelector('.user-section').style.display = 'block';
+            document.querySelector('.action-center').style.display = 'none';
+
+
+        }
+
+        function showActionCenter() {
+            document.querySelector('.manager').style.display = 'none';
+            document.querySelector('.topics-side').style.display = 'none';
+            document.querySelector('.user-section').style.display = 'none';
+            document.querySelector('.action-center').style.display = 'block';
+        }
+
+        function newRegiBtn() {
+            document.querySelector('.newUsers').style.display = 'block';
+            document.querySelector('.notif-area').style.display = 'none';
+            document.querySelector('.alert-area').style.display = 'none';
+            document.querySelector('.comp-area').style.display = 'none';
+            }
+        function notifBtn() {
+             document.querySelector('.newUsers').style.display = 'none';
+            document.querySelector('.notif-area').style.display = 'block';
+            document.querySelector('.alert-area').style.display = 'none';
+            document.querySelector('.comp-area').style.display = 'none';
+            }
+        function alertsBtn() {
+             document.querySelector('.newUsers').style.display = 'none';
+            document.querySelector('.notif-area').style.display = 'none';
+            document.querySelector('.alert-area').style.display = 'block';
+            document.querySelector('.comp-area').style.display = 'none';
+            }
+        function compsBtn() {
+             document.querySelector('.newUsers').style.display = 'none';
+            document.querySelector('.notif-area').style.display = 'none';
+            document.querySelector('.alert-area').style.display = 'none';
+            document.querySelector('.comp-area').style.display = 'block';
+            }
     </script>
 
 </body>
