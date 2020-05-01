@@ -16,8 +16,7 @@
         </div>
         <div class="menu">
             <ul>
-                <li> Admin Name&nbsp; &nbsp; <i style="z-index: 5;" onclick="showSideMenu()"
-                        class="fas fa-arrow-down"></i>&nbsp; &nbsp;
+                <li> Admin Name&nbsp; &nbsp; <i class="fas fa-arrow-down open" onclick="showSideMenu()"></i>
                 </li>
                 <ul class="side-menu">
                     <li class="close"><i onclick="hideSideMenu()" class="fas fa-times"></i></li>
@@ -31,10 +30,10 @@
     <div class="content">
         <div class="side-bar">
             <ul>
-                <li onclick="showActionCenter()"><i class="fas fa-user-shield"></i> Admin Action Center</li>
-                <li onclick="showManager()"><i class="far fa-list-alt"></i> Manage Posts</li>
-                <li onclick="showUserSection()"><i class="far fa-address-card"></i> Manage User</li>
-                <li onclick="showTopicside()"><i class="fas fa-paragraph"></i> Manage Topics</li>
+                <li style="background: rgb(22, 64, 90);" class="adminActionCenterBTN " onclick="showActionCenter()"><i class="fas fa-user-shield"></i> Admin Action Center</li>
+                <li class="managePostsBTN" onclick="showManager()"><i class="far fa-list-alt"></i> Manage Posts</li>
+                <li class="manageUserBTN" onclick="showUserSection()"><i class="far fa-address-card"></i> Manage User</li>
+                <li class="manageTopicsBTN" onclick="showTopicside()"><i class="fas fa-paragraph"></i> Manage Topics</li>
 
             </ul>
         </div>
@@ -54,6 +53,7 @@
                 <br><br><br>
 
                 <div class="newUsers">
+                    <h2>New Users</h2>
                     <div class="card">
                         <div class="card-info">
                             <div class="pics">
@@ -123,6 +123,7 @@
                 </div>
 
                 <div class="notif-area">
+                   <h2>Notifications Section</h2>
                     <div class="notif">
                         <p class="bolds">Notification title</p>
                         <p style="color: grey;">17/12/2020</p>
@@ -646,13 +647,22 @@
             document.querySelector('.manage').style.display = 'block';
         }
 
+        /*Side-menu-Function*/
+
         function showManager() {
             document.querySelector('.manager').style.display = 'block';
             document.querySelector('.topics-side').style.display = 'none';
             document.querySelector('.user-section').style.display = 'none';
             document.querySelector('.action-center').style.display = 'none';
 
+               /*activeBTN*/
+            document.querySelector('.adminActionCenterBTN').style.background = "transparent";
+            document.querySelector('.managePostsBTN').style.background = "rgb(22, 64, 90)";
+            document.querySelector('.manageUserBTN').style.background = "transparent";
+            document.querySelector('.manageTopicsBTN').style.background = "transparent";
+
         }
+       
 
         function showEditor() {
             document.querySelector('.add-post').style.display = 'block';
@@ -664,40 +674,67 @@
             document.querySelector('.topics-table').style.display = 'block';
         }
 
+ /*Side-menu-Function*/
         function showTopicside() {
             document.querySelector('.manager').style.display = 'none';
             document.querySelector('.topics-side').style.display = 'block';
             document.querySelector('.user-section').style.display = 'none';
             document.querySelector('.action-center').style.display = 'none';
 
-        }
+            
+             /*activeBTN*/
+            document.querySelector('.adminActionCenterBTN').style.background = "transparent";
+            document.querySelector('.managePostsBTN').style.background = "transparent";
+            document.querySelector('.manageUserBTN').style.background = "transparent";
+            document.querySelector('.manageTopicsBTN').style.background = "rgb(22, 64, 90) ";
 
+
+        }
+       
         function showTopicsEditor() {
             document.querySelector('.topics-table').style.display = 'none';
             document.querySelector('.add-topic').style.display = 'block';
         }
 
+ /*Side-menu-Function*/
         function showUserSection() {
             document.querySelector('.manager').style.display = 'none';
             document.querySelector('.topics-side').style.display = 'none';
             document.querySelector('.user-section').style.display = 'block';
             document.querySelector('.action-center').style.display = 'none';
 
+            
+             /*activeBTN*/
+             document.querySelector('.adminActionCenterBTN').style.background = "transparent";
+            document.querySelector('.managePostsBTN').style.background = "transparent";
+            document.querySelector('.manageUserBTN').style.background = "rgb(22, 64, 90)";
+            document.querySelector('.manageTopicsBTN').style.background = "transparent";
 
-        }
+      }
 
+  /*Side-menu-Function*/
         function showActionCenter() {
             document.querySelector('.manager').style.display = 'none';
             document.querySelector('.topics-side').style.display = 'none';
             document.querySelector('.user-section').style.display = 'none';
             document.querySelector('.action-center').style.display = 'block';
-        }
 
+            
+            /*activeBTN*/
+            document.querySelector('.adminActionCenterBTN').style.background = "rgb(22, 64, 90)";
+            document.querySelector('.managePostsBTN').style.background = "transparent";
+            document.querySelector('.manageUserBTN').style.background = "transparent";
+            document.querySelector('.manageTopicsBTN').style.background = "transparent";
+
+        }
+ 
+ 
         function newRegiBtn() {
             document.querySelector('.newUsers').style.display = 'block';
             document.querySelector('.notif-area').style.display = 'none';
             document.querySelector('.alert-area').style.display = 'none';
             document.querySelector('.comp-area').style.display = 'none';
+            
             }
         function notifBtn() {
              document.querySelector('.newUsers').style.display = 'none';

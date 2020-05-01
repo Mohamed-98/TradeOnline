@@ -28,6 +28,19 @@ nav {
     justify-content: space-between;
     align-items: center;
 
+    .open{
+        color: black;
+        font-size: 18px;
+        transform: translateY(1px);
+        transition: .3s;
+    }
+    .open:hover{
+        color: rgb(31, 94, 167);
+        transition: .3s;
+        transform: translateY(2px);
+       
+    }
+
     .logo2 {
         font-size: 15px;
         font-weight: lighter;
@@ -45,6 +58,8 @@ nav {
         top: 45px;
         overflow: hidden;
         transition: .5s ease-in-out;
+
+       
 
         .close {
             position: absolute;
@@ -80,23 +95,28 @@ nav {
         background: linear-gradient(to bottom, rgb(58, 137, 165), #f4f4f4);
         height: 88vh;
         color: #e4e4e4;
+        transition: .5s;
 
         ul {
 
             padding: 0px;
+            transition: .5s;
 
         }
 
         li {
 
+            
             border-bottom: 1px solid rgba(26, 26, 26, 0.39);
             padding: 15px 15px;
             width: 100%s;
             font-size: 18px;
+            transition: .3s ;
         }
 
         li:hover {
             background: rgb(22, 64, 90);
+            transition: .3s;
         }
     }
 
@@ -160,17 +180,24 @@ nav {
 
             .notif-area {
                 display: none;
-                width: 90%;
-                box-shadow: 0 0 3px black;
+                width: 80%;
+                
 
                 .notif {
                     padding: 10px;
-                    border-bottom: 1px solid grey;
+                    box-shadow: 0 0 1px black;
+                    border-bottom: 1px solid rgb(165, 165, 165);
+                    margin: 10px 0;
+                    transition: .3s;
 
                     p {
                         text-transform: capitalize;
                         margin: 2px;
                     }
+                }
+                .notif:hover{
+                    box-shadow: 0px 3px 3px  rgb(167, 167, 167);
+                    transition: .3s;
                 }
             }
 
