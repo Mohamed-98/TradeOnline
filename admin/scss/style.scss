@@ -13,17 +13,17 @@ body {
 }
 
 body::-webkit-scrollbar {
-    background-color: lightskyblue;
+    background-color: lightgray;
     width: 7px;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: rgb(3, 123, 197);
+    background-color: grey;
 }
 
 nav {
     padding: 0 15px;
-    background: lightskyblue;
+    background: lightgray;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,7 +92,7 @@ nav {
     .side-bar {
 
         min-width: 280px;
-        background: linear-gradient(to bottom, rgb(58, 137, 165), #f4f4f4);
+        background: linear-gradient(to bottom, grey, #f4f4f4);
         height: 88vh;
         color: #e4e4e4;
         transition: .5s;
@@ -111,12 +111,13 @@ nav {
             padding: 15px 15px;
             width: 100%s;
             font-size: 18px;
+            background-color: transparent;
             transition: .3s ;
         }
 
         li:hover {
-            background: rgb(22, 64, 90);
-            transition: .3s;
+            background-color: #333;
+            transition: .3s all;
         }
     }
 
@@ -131,7 +132,7 @@ nav {
 
                 .btn-bg {
                     padding: 15px 30px;
-                    background-color: lightskyblue;
+                    background-color: lightgray;
                     color: #333;
                     margin-right: 10px;
                     font-weight: bold;
@@ -247,7 +248,7 @@ nav {
 
                 .btn-bg {
                     padding: 15px 30px;
-                    background-color: lightskyblue;
+                    background-color: lightgray;
                     color: #333;
                     margin-right: 10px;
                     font-weight: bold;
@@ -298,7 +299,7 @@ nav {
                 }
 
                 th {
-                    background-color: lightskyblue;
+                    background-color: lightgray;
                     color: #333;
                 }
 
@@ -386,7 +387,7 @@ nav {
 
 
             th {
-                background-color: lightskyblue;
+                background-color: lightgray;
                 color: #333;
             }
 
@@ -430,7 +431,7 @@ nav {
 
                 .btn-bg {
                     padding: 15px 30px;
-                    background-color: lightskyblue;
+                    background-color: lightgray;
                     color: #333;
                     margin-right: 10px;
                     font-weight: bold;
@@ -498,7 +499,7 @@ nav {
             }
 
             th {
-                background-color: lightskyblue;
+                background-color: lightgray;
                 color: #333;
             }
 
