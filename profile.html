@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
 
-<body >
+<body>
 
     <div class="nav-container">
         <div class="nav">
             <div class="logo">
-                <img onclick="logoRedirect()" src="img/NEWLOGO2.png" height="60px" width="240px" style="margin-top: 8px; margin-left: 70px;" />
+                <img onclick="logoRedirect()" src="img/NEWLOGO2.png" height="60px" width="240px"
+                    style="margin-top: 8px; margin-left: 70px;" />
             </div>
 
             <div class="menu">
@@ -29,69 +30,285 @@
         </div>
     </div>
 
-    <div  class="content">
+    <div class="content">
         <div class="side-bar">
             <div class="personal">
                 <img class="profile-pic" src="profile example/1.jpg" alt="">
                 <br>
                 <h2>First Name</h2>
             </div>
-<br>
+
             <div class="side-bar-menu">
                 <ul>
-                   
-                    <li>Orders</li>                  
-                    
-                    
-                    <li onclick="showSettings()" id="setting" class="setting">Settings <i style="display: inline-block;" id="downarrow" class="fas fa-chevron-down"></i>
-                        <li onclick="hide()" id="hide" style="border: none; display: none;"><i class="fas fa-chevron-up"></i></li>
+
+                    <li onclick="showOrders()">Orders</li>
 
 
-                        <ul id="moreSettings">
-                            
-                            <li><a href="#"> Privacy & Security</a> </li>
-                            <li><a href="#"> Edit Account</a></li>
-                            
-                            <li><a href="#"> Log out</a></li>
-                            <li><a href="#"> DELETE ACCOUNT</a></li>
-                        
-                        </ul>
+                    <li onclick="showSettings()" id="setting" class="setting">Settings <i style="display: inline-block;"
+                            id="downarrow" class="fas fa-chevron-down"></i>
+                    <li onclick="hide()" id="hide" style="border: none; display: none;"><i
+                            class="fas fa-chevron-up"></i></li>
+
+
+                    <ul id="moreSettings">
+
+                        <li><a href="#"> Privacy & Security</a> </li>
+                        <li><a href="#"> Edit Account</a></li>
+
+                        <li><a href="#"> Log out</a></li>
+                        <li><a href="#"> DELETE ACCOUNT</a></li>
+
+                    </ul>
                     </li>
-                   
-                    <li>Help & Support</li>
-                    <li>Services</li>
-                    <li style="border: none;">About Us</li>
+
+                    <li onclick="showSupport()">Help & Support</li>
+                    <li onclick="showServices()">Services</li>
+                    <li onclick="showAbout()" style="border: none;">About Us</li>
                 </ul>
             </div>
         </div>
 
-        <div  class="content-page">
-        		<div class="test"></div>
+        <div class="content-page">
+            <div class="test">
+                <div class="general-acc-info">
+                    <h3>Access Your Information</h3>
+                    <p>Here is a list of your Trade Online information that you can access at any time. We've
+                        categorized
+                        this information by type so you can easily find what you're looking for. Our Data Policy has
+                        more information about how we collect and use your information, how it's shared and how long we
+                        retain it. It also outlines your rights and how you can exercise them, and how we operate and
+                        transfer your information as part of our global services.</p>
+                    <br>
+                    <hr><br>
+                    <h4>General Account Information</h4><br>
+                    <p>Name : Example</p>
+                    <p>ID : 0123456789</p>
+                    <p>E-mail : example@gmail.com</p>
+                    <p>address : example example example </p>
+                    <br>
+                    <p>You Can change some of these data from <a href="">Here</a> or from the Settings then "Edit
+                        Account" for more options</p>
+                </div>
+
+
+
+                <div class="orders">
+                    <h3>Manage your orders</h3>
+                    <br>
+                    <hr><br>
+
+                    <h4>Order1</h4>
+                    <p>ETA : 2days , 3hrs,</p>
+                    <p>Delivery by : Example</p>
+                    <p><a href="#">Cancel Order </a>or <span><a href="# "> Add Detail</a></span></p>
+
+                </div>
+
+                <div class="settings">
+
+                    
+                    <div class="privacy">
+                        <h2>Privacy</h2>
+                        <p>
+                            Privacy is a fundamental human right. At Trade Online, it’s also one of our core values.
+                            Your
+                            devices
+                            are important to so many parts of your life. What you share from those experiences, and who
+                            you
+                            share it with, should be up to you. We design Trade Online products to protect your privacy
+                            and
+                            give
+                            you control over your information. It’s not always easy. But that’s the kind of innovation
+                            we
+                            believe in.</p>
+                        <br><br>
+                        <h3>What is a Privacy Policy?</h3>
+                        <p>
+                            A Privacy Policy is a legal statement that specifies what the business owner does with the
+                            personal data collected from users, along with how the data is processed and for what
+                            purposes.
+
+                            In 1968, Council of Europe did studies on the threat of the Internet expansion as they were
+                            concerned with the effects of technology on human rights. This lead to the development of
+                            policies that were to be developed to protect personal data.
+
+                            This marks the start of what we know now as a "Privacy Policy." While the name "Privacy
+                            Policy"
+                            refers to the legal agreement, the concept of privacy and protecting user data is closely
+                            related.
+
+                            This agreement can also be known under these names:
+
+                            Privacy Statement
+                            Privacy Notice
+                            Privacy Information
+                            Privacy Page
+                            A Privacy Policy can be used for both your website and mobile app if it's adapted to include
+                            the
+                            platforms your business operates on.
+
+                            The requirements for Privacy Policies may differ from one country to another depending on
+                            the
+                            legislation. However, most privacy laws identify the following critical points that a
+                            business
+                            must comply with when dealing with personal data:
+
+                            Notice - Data collectors must clearly disclose what they are doing with the personal
+                            information
+                            from users before collecting it.
+                            Choice - The companies collecting the data must respect the choices of users on what
+                            information
+                            they choose to provide.
+                            Access - Users should be able to view, update or request the removal of personal data
+                            collected
+                            by the company.
+                            Security - Companies are entirely responsible for the accuracy and security (keeping it
+                            properly
+                            away from unauthorized eyes and hands) of the collected personal information.
+                        </p>
+                    </div>  
+                   
+                    <br>
+                    <hr><br>
+                    <div class="edit-account">
+                        <input type="text">
+                        <input type="text">
+                        <input type="text">
+                        <input type="text">
+                    </div>
+                    <br>
+                    <hr> <br>
+                    <div class="delete-acc">
+                        <h3>Delete Your Account</h3>
+                        <p>Are you aware that you can't get it back</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit Quisquam.</p>
+                        <a href="#" style="color: red;">Delete Account</a>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="support">
+                    <h3>Support</h3>
+                    <br>
+                    <hr><br>
+
+                    <h4>Getting Started</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, ea!</p>
+                    <br>
+                    <h4>Account Settings</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, officia.</p>
+                    <br>
+                    <h4>Contact Us</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, fugit.</p>
+                </div>
+
+                <div class="services">
+                    <h3>Services</h3>
+                    <br>
+                    <hr><br>
+
+                    <h4>All we provide</h4>
+                    <p>Comfortable selling and purchasing experience</p>
+                </div>
+
+
+                <div class="about">
+                    <h3>About Us</h3>
+                    <br>
+                    <hr><br>
+
+                    <h4>New Cairo Academy Team</h4>
+                    <p>A small group of NCA students and this Project is our graduation project</p>
+
+                </div>
+
+            </div>
         </div>
     </div>
 
 
     <script>
-    function showSettings(){
-        document.getElementById("moreSettings").style.height="200px";
-        document.getElementById("hide").style.display="block";
-        document.getElementById("setting").style.border="none";
-        document.getElementById("downarrow").style.display="none";
-      
-        
+        function showSettings() {
+            document.getElementById("moreSettings").style.height = "200px";
+            document.getElementById("hide").style.display = "block";
+            document.getElementById("setting").style.border = "none";
+            document.getElementById("downarrow").style.display = "none";
+            document.querySelector('.about').style.display = "none";
+            document.querySelector('.support').style.display = "none";
+            document.querySelector('.general-acc-info').style.display = "none";
+            document.querySelector('.orders').style.display = "none";
+            document.querySelector('.services').style.display = "none";
+            document.querySelector('.settings').style.display = "none";
+            document.querySelector('.settings').style.display = "block";
 
 
-       
-    }
-    function hide(){
-        document.getElementById("moreSettings").style.height="0px";
-        document.getElementById("downarrow").style.display="inline-block";
-      
-        document.getElementById("setting").style.borderBottom="1px solid #e4e4e4";
-        document.getElementById("hide").style.display="none";
 
-    }
-   
+
+
+
+
+
+        }
+
+        function hide() {
+            document.getElementById("moreSettings").style.height = "0px";
+            document.getElementById("downarrow").style.display = "inline-block";
+
+            document.getElementById("setting").style.borderBottom = "1px solid #e4e4e4";
+            document.getElementById("hide").style.display = "none";
+
+        }
+
+        function showAbout() {
+            document.querySelector('.about').style.display = "block";
+            document.querySelector('.support').style.display = "none";
+            document.querySelector('.general-acc-info').style.display = "none";
+            document.querySelector('.orders').style.display = "none";
+            document.querySelector('.services').style.display = "none";
+            document.querySelector('.settings').style.display = "none";
+
+
+
+        }
+
+        function showOrders() {
+            document.querySelector('.about').style.display = "none";
+            document.querySelector('.support').style.display = "none";
+            document.querySelector('.general-acc-info').style.display = "none";
+            document.querySelector('.orders').style.display = "block";
+            document.querySelector('.services').style.display = "none";
+            document.querySelector('.settings').style.display = "none";
+
+
+        }
+
+        function showSupport() {
+            document.querySelector('.about').style.display = "none";
+            document.querySelector('.support').style.display = "block";
+            document.querySelector('.general-acc-info').style.display = "none";
+            document.querySelector('.orders').style.display = "none";
+            document.querySelector('.services').style.display = "none";
+            document.querySelector('.settings').style.display = "none";
+
+
+
+        }
+
+        function showServices() {
+            document.querySelector('.about').style.display = "none";
+            document.querySelector('.support').style.display = "none";
+            document.querySelector('.general-acc-info').style.display = "none";
+            document.querySelector('.orders').style.display = "none";
+            document.querySelector('.services').style.display = "block";
+            document.querySelector('.settings').style.display = "none";
+
+
+
+        }
     </script>
 </body>
 

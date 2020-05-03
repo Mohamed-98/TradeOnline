@@ -509,28 +509,27 @@ p {
 
 .section-a .best-popular-cards .card {
 
-    max-width: 300px;
-    min-height: 400px;
+    max-width: 280px;
+    min-height: 350px;
 
     margin: 0 10px;
     overflow: hidden;
-    display: flex;
+     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    border: 0px solid #6244a4;
-    border-bottom: 4px solid #6244a4;
+    justify-content: center;
+    align-items: center; 
+    border-bottom: 3px solid #6244a4;
     padding: 5px 0;
     transition: box-shadow .5s;
 }
 
 .section-a .best-popular-cards .card img {
-    margin: 0;
-    max-height: 280px;
+    margin: 0 ;
+    max-height: 300px;
 }
 
 .card:hover {
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 0 3px black;
     transition: box-shadow .5s;
 }
 
@@ -542,7 +541,7 @@ p {
 
 .section-a .best-popular-cards .card1 {
 
-    max-width: 300px;
+    max-width: 280px;
     height: 400px;
     overflow: hidden;
     margin: 0 10px;
@@ -603,14 +602,14 @@ p {
     }
 
     .section-a .best-popular-cards .card1 .card-text {
-        max-width: 300px;
+        max-width: 280px;
 
     }
 
 
     .section-a .best-popular-cards .card {
 
-        max-width: 150px;
+        max-width: 200px;
     }
 
     .section-a .best-popular-cards .card img {
@@ -699,8 +698,8 @@ p {
 
 
     .section-a .best-popular-cards .card {
-        margin: 10px 0;
-        max-width: 300px;
+        margin: 10px 0px;
+        max-width: 180px;
         min-height: auto;
     }
 
@@ -741,12 +740,12 @@ p {
         display: flex;
         flex-direction: column;
         margin: 0;
-        min-width: 400px;
+        min-width: 500px;
         justify-content: center;
         align-items: center;
     }
 
-    .best-popular-cards .card {}
+   
 
     .on-sale,
     .most-views {
@@ -821,6 +820,8 @@ p {
 
     }
 
+    
+
     .best-popular-cards {
         display: flex;
         flex-direction: column;
@@ -830,7 +831,7 @@ p {
         align-items: center;
     }
 
-    .best-popular-cards .card {}
+  
 
     .on-sale,
     .most-views {
@@ -911,6 +912,14 @@ p {
         top: 10%;
     }
 
+    .best-popular-cards {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        min-width: 300px;
+        justify-content: center;
+        align-items: center;
+    }
     .mini-nav .menu ul li a {
         font-size: 8px;
         margin: 10px;
@@ -932,4 +941,5 @@ p {
         width: 250px;
         height: 150px;
     }
+
 }
