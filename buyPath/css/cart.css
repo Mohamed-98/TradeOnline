@@ -1,0 +1,304 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #333;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    background: #b59af8ec;
+    opacity: 1;
+    z-index: 99;
+    position: fixed;
+    box-shadow: 0 0 5px black;
+}
+
+
+.mini-nav {
+    position: relative;
+    margin-top: 90px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background: rgb(27, 27, 27);
+    padding: 10px 0;
+    width: 100%;
+
+}
+
+.menu {
+    margin-top: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu ul li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mini-nav .menu {
+    margin: 0;
+}
+
+.mini-nav .menu ul li a {
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.mini-nav .menu ul li a:hover {
+    color: white;
+    background: #6244a4a9;
+    transition: .5s;
+    cursor: pointer;
+
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu li a {
+    margin: 0px 20px;
+    font-size: 20px;
+    color: #6244a4;
+    padding: 10px 30px;
+    margin: 0px 15px;
+    border: solid 1px #6244a4;
+    border-radius: 30px 0 30px 0;
+    transition: backgroud .5s;
+
+}
+
+.search input {
+    width: 700px;
+    height: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-bottom: grey 1px solid;
+    font-size: 17px;
+    margin-right: 80px;
+
+
+}
+
+.search input:focus {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.534);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 3px black;
+    transition: .5s;
+    outline: none;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+.menu i {
+    border: none;
+    cursor: pointer;
+    margin: 0 30px;
+    font-size: 20px;
+    color: #6244a4;
+
+}
+
+.menu li a:hover {
+    color: white;
+    background: #6244a4;
+    transition: .5s;
+    cursor: pointer;
+    box-shadow: 0 0 5px black;
+
+}
+
+.menu i:hover {
+    color: #3c1e7c;
+}
+
+.logo {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    margin: 0;
+}
+
+.sidemenu-bars {
+    position: fixed;
+    top: 3%;
+    left: 0%;
+    cursor: pointer;
+    background: rgba(255, 255, 255, .3);
+    padding: 10px 15px;
+    color: #3e0ea7;
+    text-shadow: 0 0 3px 10px white;
+    font-size: 30px;
+    transition: .5s;
+    z-index: 102;
+}
+
+
+.sidemenu-bars:hover {
+    color: #100d1d;
+    box-shadow: 0 0 5px black;
+
+}
+
+.side-mini-nav {
+    position: fixed;
+    top: 0;
+    left: -1230px;
+    background: rgb(51, 51, 51);
+    color: white;
+    width: 300px;
+    min-height: 100vh;
+    display: flex;
+    transition: .5s;
+
+    z-index: 102;
+}
+
+.side-menu-nav {
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 10px black;
+
+
+
+}
+
+.side-menu-nav ul {
+    max-height: 100vh;
+    padding: 0;
+    overflow: scroll;
+
+
+}
+
+.side-menu-nav ul::-webkit-scrollbar {
+    display: none;
+}
+
+.side-menu-nav ul li {
+    color: rgb(182, 182, 182);
+    padding: 10px 15px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.352);
+
+}
+
+.side-menu-close {
+    position: absolute;
+    top: 3px;
+    font-size: 25px;
+    right: 20px;
+    color: rgb(182, 182, 182);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.side-menu-close:hover {
+    text-shadow: 0 0 5px black;
+    color: #f6f6f6;
+    transition: .5s;
+}
+
+/*-----------------------------------------------------*/
+
+.container {
+
+    width: 90%;
+
+
+    margin: 40px auto;
+}
+
+
+
+/*---------------------------start section a -----------------------------------------------*/
+.card {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 0 5px rgb(133, 133, 133);
+    width: 100%;
+}
+
+.card-img {
+    margin-right: -220px;
+}
+
+.buyBTN {
+    padding: 15px 100px;
+    font-weight: 700;
+    color: black;
+    background: #BBA2F9;
+}
+
+/*---------------------------start section a -----------------------------------------------*/
+
+footer {
+    padding: 20px 0;
+    border-top: 1px solid rgb(145, 145, 145);
+    color: #333;
+    margin: 50px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.f-help {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.f-help i {
+    margin: 0 10px;
+    font-size: 25px;
+    border: 1px solid black;
+    padding: 7px 15px;
+    border-radius: 50%;
+}
+
+.f-contact i {
+    margin: 0 10px;
+}

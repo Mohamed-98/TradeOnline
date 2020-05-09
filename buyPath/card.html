@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO Buy | cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="css/cart.css   ">
+    <link rel="icon" href="img/logorefined.png">
+</head>
+
+<body>
+    <div id="hamBtn" onclick="openSideMenu()">
+        <i class="fas fa-bars   sidemenu-bars "></i>
+
+    </div>
+
+    <div class="nav">
+
+
+
+        <div class="logo">
+            <img onclick="logoRedirect()" src="img/NEWLOGO2.png" height="58px" width="240px" />
+        </div>
+
+        <div class="menu">
+            <ul>
+
+                <li class="search"><input type="text" placeholder="Search..."></li>
+
+
+                <li> <a href="#"> Login </a></li>
+
+
+                <li> <i class="fas fa-shopping-cart"></i> </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="SideMenu" class="side-mini-nav">
+        <div class="side-menu-nav">
+            <div onclick="closeSideMenu()" class="side-menu-close">
+                <i class="fas fa-times"></i>
+            </div>
+            <ul class="side-mini-ul">
+                <li> <input type="text" name="" id="" placeholder="Search..."> </li>
+                <li> Home </li>
+                <li> Art, Crafts & Collectables </li>
+                <li> Fashion </li>
+
+                <li> Electronics </li>
+                <li> Furniture </li>
+                <li> Health & Beauty </li>
+                <li> Sports </li>
+                <li> Books </li>
+                <li> Art, Crafts & Collectables </li>
+                <li> Fashion </li>
+
+                <li> Electronics </li>
+                <li> Furniture </li>
+                <li> Health & Beauty </li>
+                <li> Sports </li>
+
+
+
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="mini-nav">
+        <div class="menu">
+            <ul>
+                <li> <a href="#"> Books </a></li>
+                <li> <a href="#"> Art, </a></li>
+                <li> <a href="#"> Fashion </a></li>
+
+                <li> <a href="#"> Electronics </a></li>
+                <li> <a href="#"> Furniture </a></li>
+                <li> <a href="#">Health </a></li>
+                <li> <a href="#"> Sports </a></li>
+
+
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <h2>My Cart (3 items)
+        </h2>
+        <p>Click Buy Now to confirm your Order</p>
+        <div class="card">
+            <div class="card-img">
+                <img src="img/sportsProdu/xboxController.jpg" width="150px" height="150px" alt="">
+            </div>
+            <div class="card-text">
+                <p>
+                    Microsoft Xbox 360 Wireless Controlle</p>
+                <p style="font-weight: 600; color: green;">445.00 EGP
+                </p> <br>
+                <p>Sold by: Hassan Mostafa
+                </p>
+                <p>Condition:New
+                </p>
+                <p>Color:Black
+                </p>
+            </div>
+            <div>
+                <a href="" class="buyBTN">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="img/sportsProdu/robot.jpg" width="150px" height="150px" alt="">
+            </div>
+            <div class="card-text">
+                <p>
+                    Microsoft Xbox 360 Wireless Controlle</p>
+                <p style="font-weight: 600; color: green;">445.00 EGP
+                </p> <br>
+                <p>Sold by: Hassan Mostafa
+                </p>
+                <p>Condition:New
+                </p>
+                <p>Color:Black
+                </p>
+            </div>
+            <div>
+                <a href="" class="buyBTN">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="img/sportsProdu/bag.jpg" width="150px" height="150px" alt="">
+            </div>
+            <div class="card-text">
+                <p>
+                    Microsoft Xbox 360 Wireless Controlle</p>
+                <p style="font-weight: 600; color: green;">445.00 EGP
+                </p> <br>
+                <p>Sold by: Hassan Mostafa
+                </p>
+                <p>Condition:New
+                </p>
+                <p>Color:Black
+                </p>
+            </div>
+            <div>
+                <a href="" class="buyBTN">Buy Now</a>
+            </div>
+
+        </div>
+
+        <div><a href="" style="color: gray; "> <i style="margin-right: 10px;" class="fas fa-chevron-left"></i>CONTINUE
+                SHOPPING</a></div>
+
+    </div>
+
+
+
+
+
+    <footer>
+        <div class="f-text">
+            <h3>We’re Always Here To Help</h3>
+            <p> Reach out to us through any of these support channels</p>
+        </div>
+        <div class="f-help">
+            <div>
+                <i class="fas fa-info"></i>
+            </div>
+            <div>
+                <p>Help Center</p>
+                <h3>example@gmail.com</h3>
+            </div>
+        </div>
+        <div class="f-contact">
+            <i class="fab fa-facebook-square"></i>-
+            <i class="fab fa-twitter"></i>-
+            <i class="fab fa-behance"></i>-
+            <i class="fab fa-vimeo-v"></i>
+        </div>
+    </footer>
+    <p style="text-align: center; font-weight: 600; margin: 5px;">NCA GraduationProject Copyrights : 2020 &copy; by
+        Hassan Mostafa
+    </p>
+    <script>
+        function logoRedirect() {
+            window.location.href = "../index.html";
+        }
+
+
+        function openSideMenu() {
+            document.getElementById('SideMenu').style.left = "0px";
+            document.getElementById('hamBtn').style.opacity = '0';
+            document.getElementById('hamBtn').style.transition = '.2s';
+            document.getElementById('body').style.opacity = '.5'
+
+        }
+
+        function closeSideMenu() {
+            document.getElementById('SideMenu').style.left = "-1000px";
+            document.getElementById('hamBtn').style.opacity = '1';
+            document.getElementById('hamBtn').style.transition = '.1s';
+        }
+    </script>
+</body>
+
+</html>
