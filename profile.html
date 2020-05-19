@@ -20,9 +20,9 @@
 
             <div class="menu">
                 <ul>
-                    <li>Account</li>
-                    <li>Buy Section</li>
-                    <li>Another option</li>
+                    <li><a href=""> Account</a></li>
+                    <li> <a href="buyPath/home.html"> Buy Section</a></li>
+                    <li> <a href=""> Another option</a></li>
                     <i class="fas fa-shopping-cart"></i>
                     <i class="fas fa-bell"></i>
                 </ul>
@@ -95,18 +95,44 @@
                 <div class="orders">
                     <h3>Manage your orders</h3>
                     <br>
-                    <hr><br>
+                    <br>
 
-                    <h4>Order1</h4>
-                    <p>ETA : 2days , 3hrs,</p>
-                    <p>Delivery by : Example</p>
-                    <p><a href="#">Cancel Order </a>or <span><a href="# "> Add Detail</a></span></p>
+                    <div class="order-box">
+                        <h4>Order1</h4>
+                        <p>ETA : 2days , 3hrs,</p>
+                        <p>Delivery by : Example</p>
+                        <p><a href="#">Cancel Order </a>or <span><a href="# "> Add Detail</a></span></p>
 
+                    </div>
+
+                    <div class="order-box">
+                        <h4>Order2</h4>
+                        <p>ETA : 2days , 3hrs,</p>
+                        <p>Delivery by : Example</p>
+                        <p><a href="#">Cancel Order </a>or <span><a href="# "> Add Detail</a></span></p>
+
+                    </div>
+
+                    <div class="order-box">
+                        <h4>Order3</h4>
+                        <p>ETA : 2days , 3hrs,</p>
+                        <p>Delivery by : Example</p>
+                        <p><a href="#">Cancel Order </a>or <span><a href="# "> Add Detail</a></span></p>
+
+                    </div>
+
+                    <div class="order-box">
+                        <h4>Order4</h4>
+                        <p>ETA : 2days , 3hrs,</p>
+                        <p>Delivery by : Example</p>
+                        <p><a href="#">Cancel Order </a>or <span><a href="# "> Add Detail</a></span></p>
+
+                    </div>
                 </div>
 
                 <div class="settings">
 
-                    
+
                     <div class="privacy">
                         <h2>Privacy</h2>
                         <p>
@@ -166,21 +192,21 @@
                             properly
                             away from unauthorized eyes and hands) of the collected personal information.
                         </p>
-                    </div>  
-                   
+                    </div>
+
                     <br>
                     <hr><br>
                     <div class="edit-account">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
+                        <label for="">Username</label><br> <input type="text"><br>
+                        <label for="">E-mail address</label><br> <input type="text"><br>
+                        <label for="">Current Password</label><br> <input type="text"><br>
+                        <label for="">New Password</label><br> <input type="text"><br>
                     </div>
                     <br>
                     <hr> <br>
                     <div class="delete-acc">
                         <h3>Delete Your Account</h3>
-                        <p>Are you aware that you can't get it back</p>
+                        <p>We won't be able to restore your account then!</p>
                         <br>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit Quisquam.</p>
                         <a href="#" style="color: red;">Delete Account</a>
@@ -197,13 +223,34 @@
                     <hr><br>
 
                     <h4>Getting Started</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, ea!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sapiente iusto est debitis
+                        deleniti iste voluptate accusamus, doloremque a molestiae repudiandae laboriosam sequi maiores
+                        provident facilis? Amet odit magnam tempore? Ab unde placeat reprehenderit tempora excepturi
+                        inventore sed quo blanditiis consequuntur laborum minima, eum voluptatem aut ea aperiam at quod!
+                    </p>
                     <br>
                     <h4>Account Settings</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, officia.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nihil sequi, natus dignissimos
+                        placeat molestias dolores esse. Totam vel tempore id at alias quasi expedita nostrum est
+                        voluptatum tempora! Temporibus ipsa minus facilis accusamus voluptatem dolorem soluta neque iure
+                        illum necessitatibus mollitia laborum, animi itaque dolores libero obcaecati repellendus
+                        perspiciatis quisquam, commodi magni. Totam ad incidunt quas vel aliquid itaque nisi
+                        reprehenderit dolores? Pariatur temporibus placeat eveniet, suscipit ratione veritatis tempora.
+                        Repellat omnis ut repellendus incidunt quaerat, dolorum nemo sed in natus reiciendis? Expedita
+                        atque quos nesciunt deleniti, quaerat aperiam voluptatem fuga illo, amet assumenda eius dolorem
+                        iure inventore doloribus?</p>
                     <br>
                     <h4>Contact Us</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, fugit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum cupiditate doloremque nihil
+                        recusandae voluptatibus, ad maxime porro ipsam dolor perspiciatis nisi facere non hic animi
+                        dolorum exercitationem corporis itaque vel.
+                        <br>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-behance"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </p>
                 </div>
 
                 <div class="services">
@@ -261,6 +308,10 @@
             document.getElementById("setting").style.borderBottom = "1px solid #e4e4e4";
             document.getElementById("hide").style.display = "none";
 
+        }
+
+        function logoRedirect() {
+            window.location.href = "index.html";
         }
 
         function showAbout() {
