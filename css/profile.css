@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  text-decoration: none;
 }
 
 body {
@@ -43,12 +44,7 @@ ul {
   transition: 0.2s;
 }
 
-.menu ul li:hover {
-  border-radius: 30px;
-  background-color: rgb(99, 68, 164, 0.8);
-  color: white;
-  transition: 0.2s;
-}
+
 
 .menu i {
   color: #6344a4;
@@ -102,8 +98,19 @@ ul {
 
 .content .content-page::-webkit-scrollbar-thumb {
   transition: all 1s;
-  background: rgba(0, 0, 0,.8);
+  background: rgba(0, 0, 0, .8);
   border-radius: 990px;
+}
+
+.order-box {
+
+  border-bottom: 1px solid gray;
+  padding: 30px 0;
+}
+
+.edit-account input {
+  width: 250px;
+  margin-bottom: 10px;
 }
 
 .personal {
@@ -156,21 +163,27 @@ ul {
   width: 100%;
   height: 600px;
 }
-.general-acc-info{
+
+.general-acc-info {
   display: block;
 }
-.about{
+
+.about {
   display: none;
 }
-.services{
+
+.services {
   display: none;
 }
-.support{
+
+.support {
   display: none;
 }
-.orders{
+
+.orders {
   display: none;
 }
-.settings{
-display: none;
+
+.settings {
+  display: none;
 }
