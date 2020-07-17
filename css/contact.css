@@ -12,6 +12,17 @@ body {
     height: 100vh;
 }
 
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -00%);
+    /*   background: linear-gradient(to right, rgb(85, 54, 145) 50%, rgb(197, 184, 223) 50%);*/
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .001)30%, #340d6ec2 100%);
+    border-radius: 10px;
+    padding: 10px;
+}
+
 .back-to-home {
     position: absolute;
     top: 20px;
@@ -41,6 +52,7 @@ body {
 }
 
 .container {
+    margin-top: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -99,9 +111,10 @@ body {
 .form-side {
     background: #f4f4f4;
     padding: 50px 50px 50px 300px;
+    border-radius: 20px;
     width: 700px;
     height: 450px;
-    box-shadow: 5px 5px 30px rgb(0, 0, 0, .5);
+    box-shadow: 5px 5px 30px rgb(0, 0, 0, .2);
     margin-left: -250px;
     z-index: -1;
 
@@ -180,5 +193,69 @@ input[type="submit"] {
     color: #eee;
     border: none;
     max-width: 150px;
+    border-radius: 5px;
     padding: 10px 12px;
+}
+
+footer {
+    position: fixed;
+    bottom: -100px;
+    width: 100%;
+    background: linear-gradient(to left, rgb(85, 54, 145) 50%, rgb(197, 184, 223) 55%);
+    border: 20px;
+    padding: 5px 0;
+    text-align: center;
+}
+
+@media screen and (max-width : 1100px) {
+    body {
+        background: linear-gradient(to left, rgb(85, 54, 145) 20%, rgb(197, 184, 223) 100%);
+    }
+
+    .container {
+        display: block;
+        width: 100%;
+        margin: 300px auto 0 auto;
+        box-sizing: border-box;
+    }
+
+    .info-side {
+        width: 100%;
+
+        box-sizing: border-box;
+
+    }
+
+    .form-side {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        padding: 50px;
+        box-sizing: border-box;
+        border-radius: 0;
+    }
+
+}
+
+@media screen and (max-width : 500px) {
+    .form-side {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: block;
+        width: 100%;
+        margin: 250px auto 0 auto;
+        box-sizing: border-box;
+    }
+
+    .info-side {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
 }
