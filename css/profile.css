@@ -9,10 +9,7 @@ body {
 }
 
 /* NAVBARAREA */
-.nav-container {
-  box-shadow: 0 0 10px black;
-  height: 80px;
-}
+
 
 ul {
   padding: 0;
@@ -20,13 +17,19 @@ ul {
   list-style: none;
 }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 20px #6244a433;
+}
+
 .nav .menu {
-  float: right;
+
   font-size: 20px;
 }
 
-.nav .logo {
-  float: left;
+.logo {
+  margin-left: 40px;
 }
 
 .menu ul {
@@ -65,7 +68,9 @@ ul {
 }
 
 .content .side-bar {
-  width: 20%;
+
+
+  min-width: 25%;
   padding-top: 20px;
   background-image: linear-gradient(rgb(200, 200, 200, 0.1), white);
   position: relative;
@@ -75,10 +80,11 @@ ul {
   content: "";
   width: 2px;
   height: 100%;
-  background-image: linear-gradient(rgb(150, 150, 150), white);
-
+  /* background-image: linear-gradient(#ccb9f7, white); */
+  background-color: transparent;
+  box-shadow: 0 0 15px #5225bb6b;
   position: absolute;
-  top: -2;
+  top: 0;
   right: 0;
   z-index: -55;
 }
@@ -161,7 +167,7 @@ ul {
 .test {
   margin-top: 50px;
   width: 100%;
-  height: 600px;
+
 }
 
 .general-acc-info {
@@ -186,4 +192,48 @@ ul {
 
 .settings {
   display: none;
+}
+
+@media screen and (max-width:1000px) {
+  .nav {
+    display: block;
+
+    text-align: center;
+  }
+
+  .nav .menu ul {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .content {
+    margin-top: 0px;
+
+    display: block;
+    width: 100%;
+  }
+
+  .content .side-bar {
+    width: 95%;
+    margin: 0 auto;
+    border: none;
+  }
+
+  .side-bar::after {
+    background: none;
+  }
+
+  .content .content-page {
+    width: 95%;
+    margin: 0 auto;
+    overflow: scroll;
+    padding: 0px;
+  }
+
+  .logo img {
+    margin: 0;
+  }
 }

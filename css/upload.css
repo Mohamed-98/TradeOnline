@@ -24,7 +24,7 @@ body {
     display: flex;
     justify-content: space-between;
 
-    box-shadow: 0 0 5px #6244a4;
+    box-shadow: 0 0 10px #6244a456;
     padding: 10px;
 
 }
@@ -44,7 +44,7 @@ body {
     padding: 10px 30px;
     margin: 0px 15px;
     border: solid 1px #6244a4;
-    border-radius: 30px 0 30px 0;
+    border-radius: 30px;
     transition: backgroud .5s;
 
 }
@@ -57,6 +57,8 @@ body {
     border-bottom: grey 1px solid;
     font-size: 16px;
     margin-right: 150px;
+
+
 }
 
 .search input:focus {
@@ -99,7 +101,8 @@ body {
     margin: 30px 150px;
     padding: 35px;
     background: #6244a428;
-    box-shadow: 0 0 5px #19014d91;
+    box-shadow: 0 0 15px #19014d33;
+    border-radius: 10px;
 }
 
 /*-----------------------------------------------*/
@@ -108,6 +111,7 @@ body {
     border-bottom: 2px solid #6244a4;
     padding-bottom: 30px;
     min-height: 400px;
+
 }
 
 .leftside {
@@ -143,7 +147,6 @@ select {
     font-size: 15px;
     height: 30px;
     padding: 5px 15px;
-
     margin-top: 2px;
     outline: none;
     transition: border .1s;
@@ -307,7 +310,7 @@ input[type=submit] {
     padding: 10px 30px;
     border: none;
     color: #f4f4f4;
-    width: 20%;
+    border-radius: 5px;
     letter-spacing: 2px;
     text-shadow: 0 0 2px black;
 }

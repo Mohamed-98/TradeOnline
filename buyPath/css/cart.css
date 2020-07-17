@@ -24,7 +24,7 @@ p {
     top: 0;
     width: 100%;
     height: 90px;
-    background: #b59af8ec;
+    background: #F3EDFB;
     opacity: 1;
     z-index: 99;
     position: fixed;
@@ -96,7 +96,7 @@ p {
     padding: 10px 30px;
     margin: 0px 15px;
     border: solid 1px #6244a4;
-    border-radius: 30px 0 30px 0;
+    border-radius: 30px;
     transition: backgroud .5s;
 
 }
@@ -234,6 +234,14 @@ p {
     transition: .5s;
 }
 
+.side-menu-nav input {
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background: #eee;
+}
+
 .side-menu-close:hover {
     text-shadow: 0 0 5px black;
     color: #f6f6f6;
@@ -269,8 +277,9 @@ p {
 .buyBTN {
     padding: 15px 100px;
     font-weight: 700;
-    color: black;
-    background: #BBA2F9;
+    color: rgb(231, 231, 231);
+    background: #6244a4;
+    border-radius: 10px;
 }
 
 /*---------------------------start section a -----------------------------------------------*/

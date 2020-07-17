@@ -2,20 +2,26 @@
   width: 0;
   height: 0;
 }
+
 body {
   background: url(../img/bgO.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 100vh;
+  width: 100%;
 }
+
 nav {
   background: rgba(0, 0, 0, 0);
   box-shadow: none;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 nav ul {
   margin-right: 150px !important;
 }
+
 nav li a {
   margin-top: 30px;
   border-radius: 30px;
@@ -29,6 +35,7 @@ nav li a {
   line-height: 1.4rem;
   transition: all 0.5s;
 }
+
 nav li a:hover {
   background: #6344a4;
   position: relative;
@@ -39,17 +46,20 @@ nav li a:hover {
   color: #6344a4;
 }
 
-.search-bar{
-  
-  margin-top: 10px; 
+
+.search-bar {
+
+  margin-top: 10px;
   margin-right: 100px;
   width: 500px !important;
- 
+
 }
+
 .search-bar [type=text]:focus {
   border-bottom: 1px solid #000 !important;
   box-shadow: 0 1px 0 0 #000 !important;
 }
+
 .active {
   position: relative;
   color: rgba(51, 51, 51, 0.699);
@@ -58,14 +68,17 @@ nav li a:hover {
 
   letter-spacing: 2px;
 }
+
 /*font section*/
 
 .active:active {
   outline: none;
 }
+
 .active:hover {
   background: #6244a4c5;
 }
+
 /* .active:before {
   content: "";
   position: absolute;
@@ -96,14 +109,19 @@ nav li a:hover:before {
   bottom: 25%;
   transition: 0.5s;
 } */
+.head-txt-area {
+  margin-left: 40px;
+}
 
 .brand-logo {
-  margin-left: 0px;
+  margin-left: 30px;
   margin-top: 10px;
 }
+
 .right {
   margin-right: 50px;
 }
+
 .right li a {
   margin-right: 50px;
 }
@@ -111,8 +129,10 @@ nav li a:hover:before {
 /*conent*/
 .content {
   width: 50%;
-  margin: 40px 0 0 80px;
+  margin-top: 40px;
+
 }
+
 .head-content {
   font-size: 50px;
   font-weight: 800;
@@ -120,6 +140,7 @@ nav li a:hover:before {
   margin-top: 80px;
   line-height: 3.5rem;
 }
+
 .slogan {
   font-size: 30px;
   color: rgba(51, 51, 51, 0.829);
@@ -128,19 +149,25 @@ nav li a:hover:before {
   text-transform: capitalize;
   margin: -50px 0 -10px 0;
 }
+
 .lorem {
   text-align: left;
 
   color: rgba(51, 51, 51, 0.829);
 }
+
 .user-area {
+  padding-top: 10px;
   display: flex;
-  margin: 50px 0 0 0px;
   text-align: center;
   width: 100%;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-left: 40px;
   position: relative;
   color: rgba(51, 51, 51, 0.829);
 }
+
 /* .user-area:before {
   content: "";
   position: absolute;
@@ -157,9 +184,9 @@ nav li a:hover:before {
   padding: 15px 80px;
   border-radius: 30px;
   text-shadow: 0 0px 2px rgb(0, 0, 0);
-
   transition: 0.5s;
 }
+
 .user-area button:hover {
   background-color: #6244a4de;
 
@@ -171,33 +198,90 @@ nav li a:hover:before {
   font-weight: 600;
   font-size: 23px;
 }
+
 .leftside {
   /* border: 2px solid #6344a4;*/
 
-  border-right: 1px solid #6344a4;
-  padding: 0 20px;
+  border-right: 2px solid #6344a4;
+  padding: 0 10px;
 }
-.rightside {
-  padding: 0 20px;
 
+
+
+.rightside {
+  padding: 0 10px;
   border-left: 2px solid #6344a4;
+
+ 
 
   /* border:2px solid #6344a4; */
 }
+
 .footer {
-  margin: 100px 0 0 50px;
+  margin: 100px 0 0 0px;
 }
+
 button {
   cursor: pointer;
 }
+
 .icons i {
   margin: 4px;
   font-size: 20px;
   color: #333;
 }
-@media screen and (max-width: 1300px){
-  .search-bar{
-    margin-right: 0 ;
+
+@media screen and (max-width: 1350px) {
+  .search-bar {
+    margin-right: 0;
     width: 200px !important;
+  }
+
+
+
+}
+
+@media screen and (max-width: 1100px) {
+  .search-bar {
+    margin-right: 0;
+    width: 200px !important;
+  }
+
+  .brand-logo {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .content {
+    width: 100%;
+
+  }
+
+  .head-txt-area {
+    margin: 0 auto;
+    padding: 40px;
+  }
+
+  body {
+    background: #ffffff;
+
+  }
+
+  .user-area {
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 20px;
+    display: block;
+    max-width: 900px;
+  }
+
+  .leftside {
+    background: #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+
+  .rightside {
+    padding: 15px;
   }
 }
