@@ -1,15 +1,8 @@
-<html>
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-    />
-
-    <link rel="stylesheet" type="text/css" href="css/login.css" />
-    <title>TO | LOGIN</title>
-    <link rel="icon" href="img/logorefined.png" />
-  </head>
-  <body>
+<?php 
+ session_start(); 
+ include('header-login.php');
+ include('config.php'); 
+ ?>
     <div class="content">
       <div class="container">
         
@@ -176,24 +169,4 @@
       </div>
     </div>
     <!-- BOTTOM-SIDE -->
-    <footer
-      style="text-align: center; font-family:Arial, Helvetica, sans-serif; margin-top: 10px;"
-    >
-      Copyright &copy; 2019 by:Hassan Mostafa
-    </footer>
-
-    <script>
-      function showForm() {
-        document.getElementById("show").style.display = "block";
-        document.getElementById("hide").style.display = "none";
-      }
-      function hideForm() {
-        document.getElementById("show").style.display = "none";
-        document.getElementById("hide").style.display = "block";
-      }
-      function backToHome() {
-        window.location.href = "index.html";
-      }
-    </script>
-  </body>
-</html>
+<?php include('Footer-login.php'); ?>

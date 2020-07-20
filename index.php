@@ -1,26 +1,8 @@
-<html>
-  <head>
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
-    />
-    
-
-
-
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <title>TO | HOME</title>
-    <link rel="icon" href="img/logorefined.png">
-  </head>
-  <body  >
+<?php 
+ session_start();
+ include('header-index.php');
+ include('config.php'); 
+ ?>
     <!-- NAVBAR-AREA -->
     <nav>
       
@@ -42,7 +24,7 @@
           <ul class="right hide-on-med-and-down ">
             <li class="search-bar" ><input type="text" placeholder="SEARCH..." name=""></li>
             <li><a href="#">Contact</a></li>
-            <li><a class="active" href="login.html">Log In</a></li>
+            <li><a class="active" href="login.php">Log In</a></li>
           </ul>
         </div>
       </div>
@@ -107,39 +89,4 @@
 </div>
 
     <!-- Site footer -->
-    <footer style="text-align: center;">
-     <div class="footer">
-  <div class="icons">
-      <i class="fab fa-facebook-f"></i>
-      <i class="fab fa-behance"></i>
-    <i class="fab fa-twitter"></i>
-    <i class="fab fa-google-plus-g"></i> <br>
-    Copyright &copy; 2019 by:Hassan Mostafa
-   
-
-  </div>
-</div> 
-</footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $(".sidenav").sidenav();
-      });
-
-      function logoRedirect(){
-        window.location.href = "index.html";
-      }
-
-
-      function sellClick(){
-        window.location.href = "upload.html";
-
-      }
-
-      
-
-    </script>
-  </body>
-</html>
+<?php include('Footer-index.php'); ?>
